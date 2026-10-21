@@ -1,3 +1,8 @@
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at https://mozilla.org/MPL/2.0/.
+// SPDX-License-Identifier: MPL-2.0
+// Copyright (c) 2026 ALS HDT Prototype Contributors.
 using System;
 using UnityEngine;
 
@@ -13,17 +18,25 @@ namespace ALS.HDT
         public bool RightOverride => rightGoal != null;
         public string Mode => LeftOverride || RightOverride ? "SERVO INPUT / SIMULATION ONLY" : "GESTURES / 7 ARM + 6 HAND";
         private AvatarController avatar;
-        public void Initialize(AvatarController owner) { avatar = owner; leftProfile.Validate(); rightProfile.Validate(); }
-        public ServoRigProfile Profile(BodySide side) => side == BodySide.Left ? leftProfile : rightProfile;
+        public void Initialize(AvatarController owner)
+        {
+            if (!leftProfile || !rightProfile || leftProfile.side != BodySide.Left || rightProfile.side != BodySide.Right)
+                throw new ArgumentException("Assign matching left and right servo profiles.");
+            avatar = owner;
+            leftProfile.Validate(); rightProfile.Validate();
+        }
+        public ServoRigProfile Profile(BodySide side)
+        {
+            ServoRigSchema.RequireSide(side);
+            return side == BodySide.Left ? leftProfile : rightProfile;
+        }
 
         public void SetPose(BodySide side, float[] values)
         {
-            if (side == BodySide.None) throw new ArgumentException("side must be left or right.");
+            ServoRigSchema.RequireSide(side);
             var profile = Profile(side);
-            if (values == null || values.Length != 13) throw new ArgumentException("values must contain exactly 13 angles in A1..A7,H1..H6 order.");
             // Validate the entire packet before mutating any live target.
-            for (int i = 0; i < 13; i++) if (!float.IsFinite(values[i]) || values[i] < profile.channels[i].inputMin || values[i] > profile.channels[i].inputMax)
-                throw new ArgumentException("Input out of calibrated range at " + profile.channels[i].id);
+            profile.ValidateInput(values);
             if (!LeftOverride && !RightOverride) avatar.gestures.HoldPose(ResolvedPose());
             if (side == BodySide.Left) { leftCurrent ??= profile.Encode(avatar.gestures.Pose.left); leftGoal = (float[])values.Clone(); }
             else { rightCurrent ??= profile.Encode(avatar.gestures.Pose.right); rightGoal = (float[])values.Clone(); }
@@ -45,7 +58,7 @@ namespace ALS.HDT
         private static void Advance(float[] current, float[] goal, ServoRigProfile profile, float dt)
         {
             if (goal == null) return;
-            for (int i = 0; i < 13; i++) current[i] = Mathf.MoveTowards(current[i], goal[i], profile.channels[i].maxInputDegreesPerSecond * dt);
+            for (int i = 0; i < ServoRigSchema.ChannelCount; i++) current[i] = Mathf.MoveTowards(current[i], goal[i], profile.channels[i].maxInputDegreesPerSecond * dt);
         }
         public ArmPose Resolve(BodySide side, ArmPose gesture)
         {

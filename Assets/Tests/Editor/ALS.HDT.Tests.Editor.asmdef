@@ -1,0 +1,15 @@
+{
+  "name": "ALS.HDT.Tests.Editor",
+  "rootNamespace": "ALS.HDT.Tests",
+  "references": [
+    "ALS.HDT.Runtime",
+    "ALS.HDT.Editor"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false
+}

@@ -1,0 +1,31 @@
+name: Bug report
+description: Report a reproducible software or physics defect.
+body:
+  - type: markdown
+    attributes:
+      value: Do not attach credentials, private recordings or patient-identifying data. Use SECURITY.md for sensitive reports.
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, hardware, Unity version and commit.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include the gesture or JSON input and relevant settings.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Logs or validation results
+      description: Remove private information before attaching files.

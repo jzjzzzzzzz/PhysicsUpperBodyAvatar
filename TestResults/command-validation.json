@@ -289,7 +289,7 @@
         "accepted": false,
         "action": "",
         "state": "",
-        "error": "Input out of calibrated range at H6",
+        "error": "Servo angles must be finite.",
         "side": "",
         "mode": "",
         "targetValues": [],
@@ -322,6 +322,72 @@
           90.0
         ],
         "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "uppercase action",
+      "passed": true,
+      "response": {
+        "accepted": true,
+        "action": "wave",
+        "state": "BlendingIn",
+        "error": "",
+        "side": "",
+        "mode": "",
+        "targetValues": [],
+        "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "minimum duration",
+      "passed": true,
+      "response": {
+        "accepted": true,
+        "action": "wave",
+        "state": "BlendingIn",
+        "error": "",
+        "side": "",
+        "mode": "",
+        "targetValues": [],
+        "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "maximum duration",
+      "passed": true,
+      "response": {
+        "accepted": true,
+        "action": "wave",
+        "state": "BlendingIn",
+        "error": "",
+        "side": "",
+        "mode": "",
+        "targetValues": [],
+        "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "invalid UTF-8 frame",
+      "passed": true,
+      "response": {
+        "accepted": false,
+        "error": "Invalid request frame."
+      }
+    },
+    {
+      "name": "oversized frame",
+      "passed": true,
+      "response": {
+        "accepted": false,
+        "error": "Invalid request frame."
+      }
+    },
+    {
+      "name": "bounded client admission",
+      "passed": true,
+      "response": {
+        "accepted": false,
+        "error": "Server is busy."
       }
     }
   ]

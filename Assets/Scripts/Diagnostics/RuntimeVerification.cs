@@ -1,3 +1,8 @@
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at https://mozilla.org/MPL/2.0/.
+// SPDX-License-Identifier: MPL-2.0
+// Copyright (c) 2026 ALS HDT Prototype Contributors.
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -36,14 +41,14 @@ namespace ALS.HDT
         {
             var args = Environment.GetCommandLineArgs();
             if (!args.Contains("-hdtSelfTest")) yield break;
-            FindFirstObjectByType<AvatarHUD>().SuppressNativeInputForVerification = true;
-            FindFirstObjectByType<OrbitCamera>().enabled = false;
+            FindAnyObjectByType<AvatarHUD>().SuppressNativeInputForVerification = true;
+            FindAnyObjectByType<OrbitCamera>().enabled = false;
             int outputFlag = Array.IndexOf(args, "-hdtOutput");
             output = outputFlag >= 0 && outputFlag + 1 < args.Length ? Path.GetFullPath(args[outputFlag + 1])
                 : Path.Combine(Application.persistentDataPath, "TestResults");
             Directory.CreateDirectory(output);
             report = new Report { unityVersion = Application.unityVersion, platform = Application.platform.ToString(), graphicsDevice = SystemInfo.graphicsDeviceName };
-            var lab = FindFirstObjectByType<InteractionLab>();
+            var lab = FindAnyObjectByType<InteractionLab>();
             lab.movableObject.gameObject.SetActive(false);
             testing = true;
             yield return new WaitForSeconds(2);
@@ -72,7 +77,7 @@ namespace ALS.HDT
             SubmitButton("Toggle resistance gate");
             SubmitButton("Physics Debug");
             yield return new WaitForSeconds(.2f);
-            var debug = FindFirstObjectByType<AvatarHUD>().GetComponent<UIDocument>().rootVisualElement.Q("debug-panel");
+            var debug = FindAnyObjectByType<AvatarHUD>().GetComponent<UIDocument>().rootVisualElement.Q("debug-panel");
             Check("UI navigation: diagnostics", debug.resolvedStyle.display != DisplayStyle.None, "Physics diagnostics panel opens.");
             yield return Capture("PhysicsDebug");
             SubmitButton("Physics Debug"); SubmitButton("Reset Physics");
@@ -86,7 +91,7 @@ namespace ALS.HDT
             Check("13-channel independent finger physics", avatar.Find("R_Index_0").Angles.x < -30 && avatar.Find("R_Index_1").Angles.x < -30
                 && avatar.Find("R_Middle_0").Angles.x > -15 && avatar.Find("L_Index_0").Angles.x > -15,
                 $"Right index {avatar.Find("R_Index_0").Angles.x:F1}°; right middle {avatar.Find("R_Middle_0").Angles.x:F1}°; left index {avatar.Find("L_Index_0").Angles.x:F1}°. One input per finger, multiple simulated phalanges.");
-            var hud = FindFirstObjectByType<AvatarHUD>();
+            var hud = FindAnyObjectByType<AvatarHUD>();
             var root = hud.GetComponent<UIDocument>().rootVisualElement;
             root.Q<Foldout>("servo-panel").value = true;
             var slider = root.Q<Slider>("servo-H2");
@@ -99,7 +104,7 @@ namespace ALS.HDT
             yield return Capture("ServoMapping");
             // A real rendered close-up, not an edited reference photo.
             root.Q<ScrollView>("sidebar").ScrollTo(root.Q<Slider>("servo-H6"));
-            var orbit = FindFirstObjectByType<OrbitCamera>();
+            var orbit = FindAnyObjectByType<OrbitCamera>();
             var oldFocus = orbit.focus; float oldDistance = orbit.distance, oldYaw = orbit.yaw, oldPitch = orbit.pitch;
             orbit.focus = avatar.Find("R_Hand").body.position + Vector3.down * .07f;
             orbit.distance = .52f; orbit.yaw = -75; orbit.pitch = 0; orbit.Place();
@@ -195,7 +200,7 @@ namespace ALS.HDT
         }
         private void SubmitButton(string label)
         {
-            var hud = FindFirstObjectByType<AvatarHUD>();
+            var hud = FindAnyObjectByType<AvatarHUD>();
             var root = hud.GetComponent<UIDocument>().rootVisualElement;
             var button = root.Query<Button>().ToList().First(b => b.text == label);
             button.Focus();

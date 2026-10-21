@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="55" result="Passed" total="55" passed="55" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.0418811">
+  <test-suite type="TestSuite" id="1000" name="Physics Upper Body Avatar" fullname="Physics Upper Body Avatar" runstate="Runnable" testcasecount="55" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.041881" total="55" passed="55" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1065" name="ALS.HDT.Tests.Editor.dll" fullname="${PROJECT_ROOT}/Library/ScriptAssemblies/ALS.HDT.Tests.Editor.dll" runstate="Runnable" testcasecount="55" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.034288" total="55" passed="55" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="35833" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1066" name="ALS" fullname="ALS" runstate="Runnable" testcasecount="55" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.034169" total="55" passed="55" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1067" name="HDT" fullname="ALS.HDT" runstate="Runnable" testcasecount="55" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.034120" total="55" passed="55" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1068" name="Tests" fullname="ALS.HDT.Tests" runstate="Runnable" testcasecount="55" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.034048" total="55" passed="55" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1001" name="CommandProtocolTests" fullname="ALS.HDT.Tests.CommandProtocolTests" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" testcasecount="23" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.026763" total="23" passed="23" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-suite type="ParameterizedMethod" id="1010" name="AcceptsDurationBoundary" fullname="ALS.HDT.Tests.CommandProtocolTests.AcceptsDurationBoundary" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.009780" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1007" name="AcceptsDurationBoundary(0.0f)" fullname="ALS.HDT.Tests.CommandProtocolTests.AcceptsDurationBoundary(0.0f)" methodname="AcceptsDurationBoundary" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="1348513126" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.007045" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1008" name="AcceptsDurationBoundary(1.2f)" fullname="ALS.HDT.Tests.CommandProtocolTests.AcceptsDurationBoundary(1.2f)" methodname="AcceptsDurationBoundary" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="1344677277" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000067" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1009" name="AcceptsDurationBoundary(15.0f)" fullname="ALS.HDT.Tests.CommandProtocolTests.AcceptsDurationBoundary(15.0f)" methodname="AcceptsDurationBoundary" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="1801744080" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000031" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1028" name="CancelledAndExpiredCommandsCannotExecuteLater" fullname="ALS.HDT.Tests.CommandProtocolTests.CancelledAndExpiredCommandsCannotExecuteLater" methodname="CancelledAndExpiredCommandsCannotExecuteLater" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="670584979" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.001356" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1029" name="CommandCompletesOnlyOnce" fullname="ALS.HDT.Tests.CommandProtocolTests.CommandCompletesOnlyOnce" methodname="CommandCompletesOnlyOnce" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="1267714185" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000163" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1006" name="ParsesGesture" fullname="ALS.HDT.Tests.CommandProtocolTests.ParsesGesture" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.001094" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1002" name="ParsesGesture(&quot;handshake&quot;,Handshake)" fullname="ALS.HDT.Tests.CommandProtocolTests.ParsesGesture(&quot;handshake&quot;,Handshake)" methodname="ParsesGesture" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="1879083904" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000675" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1003" name="ParsesGesture(&quot;WAVE&quot;,Wave)" fullname="ALS.HDT.Tests.CommandProtocolTests.ParsesGesture(&quot;WAVE&quot;,Wave)" methodname="ParsesGesture" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="1248036337" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000035" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1004" name="ParsesGesture(&quot;double_thumbs_up&quot;,DoubleThumbsUp)" fullname="ALS.HDT.Tests.CommandProtocolTests.ParsesGesture(&quot;double_thumbs_up&quot;,DoubleThumbsUp)" methodname="ParsesGesture" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="46302320" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000035" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1005" name="ParsesGesture(&quot;idle&quot;,Idle)" fullname="ALS.HDT.Tests.CommandProtocolTests.ParsesGesture(&quot;idle&quot;,Idle)" methodname="ParsesGesture" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="201077175" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000034" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1023" name="ParsesServoSide" fullname="ALS.HDT.Tests.CommandProtocolTests.ParsesServoSide" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000299" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1021" name="ParsesServoSide(&quot;left&quot;,Left)" fullname="ALS.HDT.Tests.CommandProtocolTests.ParsesServoSide(&quot;left&quot;,Left)" methodname="ParsesServoSide" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="953459806" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000120" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1022" name="ParsesServoSide(&quot;right&quot;,Right)" fullname="ALS.HDT.Tests.CommandProtocolTests.ParsesServoSide(&quot;right&quot;,Right)" methodname="ParsesServoSide" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="1951074694" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000033" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1014" name="RejectsDurationOutsideContract" fullname="ALS.HDT.Tests.CommandProtocolTests.RejectsDurationOutsideContract" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.001326" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1011" name="RejectsDurationOutsideContract(-1.0f)" fullname="ALS.HDT.Tests.CommandProtocolTests.RejectsDurationOutsideContract(-1.0f)" methodname="RejectsDurationOutsideContract" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="639750310" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.001076" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1012" name="RejectsDurationOutsideContract(0.1f)" fullname="ALS.HDT.Tests.CommandProtocolTests.RejectsDurationOutsideContract(0.1f)" methodname="RejectsDurationOutsideContract" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="1016583240" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000033" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1013" name="RejectsDurationOutsideContract(16.0f)" fullname="ALS.HDT.Tests.CommandProtocolTests.RejectsDurationOutsideContract(16.0f)" methodname="RejectsDurationOutsideContract" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="583967525" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000030" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1027" name="RejectsIncompleteServoPacket" fullname="ALS.HDT.Tests.CommandProtocolTests.RejectsIncompleteServoPacket" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000361" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1024" name="RejectsIncompleteServoPacket(0)" fullname="ALS.HDT.Tests.CommandProtocolTests.RejectsIncompleteServoPacket(0)" methodname="RejectsIncompleteServoPacket" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="645289680" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000128" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1025" name="RejectsIncompleteServoPacket(12)" fullname="ALS.HDT.Tests.CommandProtocolTests.RejectsIncompleteServoPacket(12)" methodname="RejectsIncompleteServoPacket" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="505926862" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000029" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1026" name="RejectsIncompleteServoPacket(14)" fullname="ALS.HDT.Tests.CommandProtocolTests.RejectsIncompleteServoPacket(14)" methodname="RejectsIncompleteServoPacket" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="10771433" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000032" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1020" name="RejectsInvalidCommand" fullname="ALS.HDT.Tests.CommandProtocolTests.RejectsInvalidCommand" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000500" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1015" name="RejectsInvalidCommand(&quot;&quot;)" fullname="ALS.HDT.Tests.CommandProtocolTests.RejectsInvalidCommand(&quot;&quot;)" methodname="RejectsInvalidCommand" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="1534491806" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000103" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1016" name="RejectsInvalidCommand(&quot;{}&quot;)" fullname="ALS.HDT.Tests.CommandProtocolTests.RejectsInvalidCommand(&quot;{}&quot;)" methodname="RejectsInvalidCommand" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="145622015" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000029" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1017" name="RejectsInvalidCommand(&quot;not-json&quot;)" fullname="ALS.HDT.Tests.CommandProtocolTests.RejectsInvalidCommand(&quot;not-json&quot;)" methodname="RejectsInvalidCommand" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="1556796337" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000052" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1018" name="RejectsInvalidCommand(&quot;{\&quot;action\&quot;:\&quot;unknown\&quot;}&quot;)" fullname="ALS.HDT.Tests.CommandProtocolTests.RejectsInvalidCommand(&quot;{\&quot;action\&quot;:\&quot;unknown\&quot;}&quot;)" methodname="RejectsInvalidCommand" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="899975507" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000031" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1019" name="RejectsInvalidCommand(&quot;{\&quot;action\&quot;:\&quot;servo_state\&quot;,\&quot;side\&quot;:\&quot;other\&quot;}&quot;)" fullname="ALS.HDT.Tests.CommandProtocolTests.RejectsInvalidCommand(&quot;{\&quot;action\&quot;:\&quot;servo_state\&quot;,\&quot;side\&quot;:\&quot;other\&quot;}&quot;)" methodname="RejectsInvalidCommand" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="870148718" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000030" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1030" name="StoppedTransportReleasesItsPort" fullname="ALS.HDT.Tests.CommandProtocolTests.StoppedTransportReleasesItsPort" methodname="StoppedTransportReleasesItsPort" classname="ALS.HDT.Tests.CommandProtocolTests" runstate="Runnable" seed="484888868" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.008107" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1031" name="ServoRigTests" fullname="ALS.HDT.Tests.ServoRigTests" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" testcasecount="32" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.006895" total="32" passed="32" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1059" name="ChannelOrderAndFunctionsAreStable" fullname="ALS.HDT.Tests.ServoRigTests.ChannelOrderAndFunctionsAreStable" methodname="ChannelOrderAndFunctionsAreStable" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="1733122662" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.001736" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1062" name="DecodeRejectsInvalidInputs" fullname="ALS.HDT.Tests.ServoRigTests.DecodeRejectsInvalidInputs" methodname="DecodeRejectsInvalidInputs" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="398335914" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000368" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1058" name="EveryChannelRoundTripsWithEitherDirection" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" testcasecount="26" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.002846" total="26" passed="26" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1032" name="EveryChannelRoundTripsWithEitherDirection(0,False)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(0,False)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="488933466" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000363" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1033" name="EveryChannelRoundTripsWithEitherDirection(0,True)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(0,True)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="1945151680" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000061" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1034" name="EveryChannelRoundTripsWithEitherDirection(1,False)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(1,False)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="1437435354" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000058" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1035" name="EveryChannelRoundTripsWithEitherDirection(1,True)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(1,True)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="35777230" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000055" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1036" name="EveryChannelRoundTripsWithEitherDirection(2,False)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(2,False)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="51757936" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000055" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1037" name="EveryChannelRoundTripsWithEitherDirection(2,True)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(2,True)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="1590981099" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000055" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1038" name="EveryChannelRoundTripsWithEitherDirection(3,False)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(3,False)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="1031021210" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000054" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1039" name="EveryChannelRoundTripsWithEitherDirection(3,True)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(3,True)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="1074901810" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000051" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1040" name="EveryChannelRoundTripsWithEitherDirection(4,False)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(4,False)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="258359828" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000052" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1041" name="EveryChannelRoundTripsWithEitherDirection(4,True)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(4,True)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="588229098" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000054" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1042" name="EveryChannelRoundTripsWithEitherDirection(5,False)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(5,False)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="369618059" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000052" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1043" name="EveryChannelRoundTripsWithEitherDirection(5,True)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(5,True)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="476958779" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000055" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1044" name="EveryChannelRoundTripsWithEitherDirection(6,False)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(6,False)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="1121587283" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000054" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1045" name="EveryChannelRoundTripsWithEitherDirection(6,True)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(6,True)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="991416866" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000055" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1046" name="EveryChannelRoundTripsWithEitherDirection(7,False)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(7,False)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="766302148" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000057" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1047" name="EveryChannelRoundTripsWithEitherDirection(7,True)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(7,True)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="1493822017" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000055" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1048" name="EveryChannelRoundTripsWithEitherDirection(8,False)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(8,False)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="538679280" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000052" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1049" name="EveryChannelRoundTripsWithEitherDirection(8,True)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(8,True)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="1723760449" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000057" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1050" name="EveryChannelRoundTripsWithEitherDirection(9,False)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(9,False)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="1708580324" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000054" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1051" name="EveryChannelRoundTripsWithEitherDirection(9,True)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(9,True)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="2014359531" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000054" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1052" name="EveryChannelRoundTripsWithEitherDirection(10,False)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(10,False)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="1880867051" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000056" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1053" name="EveryChannelRoundTripsWithEitherDirection(10,True)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(10,True)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="500377897" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000055" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1054" name="EveryChannelRoundTripsWithEitherDirection(11,False)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(11,False)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="369623632" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000054" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1055" name="EveryChannelRoundTripsWithEitherDirection(11,True)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(11,True)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="30272613" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000057" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1056" name="EveryChannelRoundTripsWithEitherDirection(12,False)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(12,False)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="2103400758" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000057" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1057" name="EveryChannelRoundTripsWithEitherDirection(12,True)" fullname="ALS.HDT.Tests.ServoRigTests.EveryChannelRoundTripsWithEitherDirection(12,True)" methodname="EveryChannelRoundTripsWithEitherDirection" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="407363571" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000056" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1064" name="InputArraysAreIndependentAndWristHasTwoTargets" fullname="ALS.HDT.Tests.ServoRigTests.InputArraysAreIndependentAndWristHasTwoTargets" methodname="InputArraysAreIndependentAndWristHasTwoTargets" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="351040166" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000383" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1061" name="InvalidChannelIdAndFingerSynergyAreRejected" fullname="ALS.HDT.Tests.ServoRigTests.InvalidChannelIdAndFingerSynergyAreRejected" methodname="InvalidChannelIdAndFingerSynergyAreRejected" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="968509873" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000171" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1060" name="InvalidSideAndCalibrationAreRejected" fullname="ALS.HDT.Tests.ServoRigTests.InvalidSideAndCalibrationAreRejected" methodname="InvalidSideAndCalibrationAreRejected" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="947343936" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000145" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1063" name="NullPoseIsRejected" fullname="ALS.HDT.Tests.ServoRigTests.NullPoseIsRejected" methodname="NullPoseIsRejected" classname="ALS.HDT.Tests.ServoRigTests" runstate="Runnable" seed="1633688750" result="Passed" start-time="2026-10-21 18:13:05Z" end-time="2026-10-21 18:13:05Z" duration="0.000137" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: ${HOME}/Library/Application Support/ALS HDT Research/Physics Upper Body Avatar/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

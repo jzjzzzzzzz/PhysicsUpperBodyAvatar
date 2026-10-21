@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at https://mozilla.org/MPL/2.0/.
+# SPDX-License-Identifier: MPL-2.0
+# Copyright (c) 2026 ALS HDT Prototype Contributors.
 """Check local documentation links, example syntax and the 13-channel worksheet."""
 import ast
 import csv
@@ -11,8 +16,9 @@ ROOT = Path(__file__).resolve().parent.parent
 IDS = [f"A{i}" for i in range(1, 8)] + [f"H{i}" for i in range(1, 7)]
 
 
-def validate():
-    documents = [ROOT / "README.md", *sorted((ROOT / "Documentation").rglob("*.md"))]
+def validate(root=ROOT):
+    root = Path(root)
+    documents = [*sorted(root.glob("*.md")), *sorted((root / "Documentation").rglob("*.md"))]
     counts = {"local_links": 0, "json_examples": 0, "python_examples": 0}
     for path in documents:
         source = path.read_text(encoding="utf-8")
@@ -22,7 +28,7 @@ def validate():
                 continue
             target = (path.parent / unquote(url.split("#", 1)[0])).resolve()
             if not target.exists():
-                raise ValueError(f"Broken local link in {path.relative_to(ROOT)}: {url}")
+                raise ValueError(f"Broken local link in {path.relative_to(root)}: {url}")
             counts["local_links"] += 1
         for language, example in re.findall(r"```([\w+-]+)\n(.*?)\n```", source, re.DOTALL):
             if language == "json":
@@ -37,13 +43,13 @@ def validate():
                 ast.parse(example, filename=str(path))
                 counts["python_examples"] += 1
     for side in ("Left", "Right"):
-        path = ROOT / f"Assets/StreamingAssets/Hardware/ServoRig{side}.json"
+        path = root / f"Assets/StreamingAssets/Hardware/ServoRig{side}.json"
         profile = json.loads(path.read_text())
         if [c["id"] for c in profile["channels"]] != IDS:
             raise ValueError(f"Unexpected channel order: {path}")
         if [c["function"] for c in profile["channels"]] != list(range(13)):
             raise ValueError(f"Unexpected function order: {path}")
-    with (ROOT / "Documentation/Hardware/servo-channel-map.csv").open(encoding="utf-8-sig", newline="") as handle:
+    with (root / "Documentation/Hardware/servo-channel-map.csv").open(encoding="utf-8-sig", newline="") as handle:
         rows = list(csv.DictReader(handle))
     if [row["logical_id"] for row in rows] != IDS:
         raise ValueError("Calibration worksheet must preserve all 13 ordered logical channels.")

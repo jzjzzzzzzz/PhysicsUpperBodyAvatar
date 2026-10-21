@@ -1,0 +1,137 @@
+{
+    "unityVersion": "6000.5.7f1",
+    "mode": "Unity Editor / PhysX manual simulation; no rendering or play-mode collision callbacks",
+    "allPassed": true,
+    "tests": [
+        {
+            "name": "Structure",
+            "passed": true,
+            "detail": "41 bodies, 39 bounded joint motors; arms and fingers dynamic."
+        },
+        {
+            "name": "Skinned renderer",
+            "passed": true,
+            "detail": "The active visible skin directly references physical Rigidbody transforms."
+        },
+        {
+            "name": "No animated visible skeleton",
+            "passed": true,
+            "detail": "No Animator or runtime source-model bone follower is present."
+        },
+        {
+            "name": "Realistic textured human",
+            "passed": true,
+            "detail": "Microsoft Rocketbox upper-body skin, with body/head/hair texture materials."
+        },
+        {
+            "name": "Visible hands and every finger segment",
+            "passed": true,
+            "detail": "32/32 hand and finger bodies influence retained visible geometry."
+        },
+        {
+            "name": "Hardware channel structure",
+            "passed": true,
+            "detail": "Per side: 7 arm + 6 hand inputs; wrist has only two driven axes; controller ports are provisional."
+        },
+        {
+            "name": "Servo endpoint/direction conversion",
+            "passed": true,
+            "detail": "All 26 channels round-trip in both direction conventions; this is not hardware calibration."
+        },
+        {
+            "name": "Initial external clearance",
+            "passed": true,
+            "detail": "0 avatar/external collider penetrations before simulation."
+        },
+        {
+            "name": "Idle tracking",
+            "passed": true,
+            "detail": "Mean major-joint rotation error 2.47 degrees."
+        },
+        {
+            "name": "Independent single-servo finger synergy",
+            "passed": true,
+            "detail": "One H1 curls multiple physical index joints: proximal -70.8°, middle joint -82.3°; separate middle finger -0.3°."
+        },
+        {
+            "name": "Atomic servo packet rejection",
+            "passed": true,
+            "detail": "Invalid packet rejected without changing any accepted channel target."
+        },
+        {
+            "name": "Servo to gesture smooth transition",
+            "passed": true,
+            "detail": "Return blends from the current servo pose, not the stale gesture target."
+        },
+        {
+            "name": "Handshake finite and returns idle",
+            "passed": true,
+            "detail": "Peak wrist y=1.274m z=0.474m; hold mean error=2.70 degrees."
+        },
+        {
+            "name": "Handshake extension",
+            "passed": true,
+            "detail": "Forward travel 0.364m."
+        },
+        {
+            "name": "Wave finite and returns idle",
+            "passed": true,
+            "detail": "Peak wrist y=1.655m z=0.216m; hold mean error=4.15 degrees."
+        },
+        {
+            "name": "Wave arm elevation",
+            "passed": true,
+            "detail": "Vertical wrist travel 0.701m."
+        },
+        {
+            "name": "DoubleThumbsUp finite and returns idle",
+            "passed": true,
+            "detail": "Peak wrist y=1.238m z=0.305m; hold mean error=3.95 degrees."
+        },
+        {
+            "name": "Finger fist actuation",
+            "passed": true,
+            "detail": "Right index proximal flexion -71.8 degrees."
+        },
+        {
+            "name": "Thumb extension orientation",
+            "passed": true,
+            "detail": "Right thumb direction dot world up 0.654."
+        },
+        {
+            "name": "Gravity with disabled motors",
+            "passed": true,
+            "detail": "Hand dropped 0.278m when drive torque was removed."
+        },
+        {
+            "name": "Solid obstacle changes motion",
+            "passed": true,
+            "detail": "Free wrist z=0.451; blocked=0.334; hold error=7.30 degrees."
+        },
+        {
+            "name": "Recovery after obstacle removal",
+            "passed": true,
+            "detail": "Recovered wrist forward by 0.142m."
+        },
+        {
+            "name": "External impulse response",
+            "passed": true,
+            "detail": "Wrist displacement after impulse 0.0063m."
+        },
+        {
+            "name": "Movable object gravity and support",
+            "passed": true,
+            "detail": "Supported object centre y=1.0400m."
+        },
+        {
+            "name": "Constraint stability",
+            "passed": true,
+            "detail": "Max anchor separation 0.0004m (R_Thumb_0); max linear speed 3.83m/s."
+        },
+        {
+            "name": "Elbow anatomical twist limits",
+            "passed": true,
+            "detail": "Maximum excursion beyond configured flexion/extension range 1.42 degrees (numerical tolerance 3 degrees)."
+        }
+    ]
+}

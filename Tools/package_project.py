@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at https://mozilla.org/MPL/2.0/.
+# SPDX-License-Identifier: MPL-2.0
+# Copyright (c) 2026 ALS HDT Prototype Contributors.
 """Stage and validate source/app packages, including offline user guides."""
 from datetime import datetime, timezone
 import hashlib
@@ -16,11 +21,14 @@ REPORTS = (
     "physics-validation.json",
     "Standalone/runtime-validation.json",
     "command-validation.json",
+    "repository-validation.json",
 )
 SOURCE_ITEMS = (
-    "Assets", "Packages", "ProjectSettings", "Documentation", "Tools",
-    "TestResults", "README.md", "LICENSE", ".gitignore",
+    "Assets", "Packages", "ProjectSettings", "Documentation", "Tools", "Tests", "LICENSES", ".github",
+    "TestResults", "LICENSE", "VERSION", ".gitignore", ".gitattributes", ".editorconfig",
+    *[p.name for p in sorted(ROOT.glob("*.md"))],
 )
+
 
 
 def sha256(path):
@@ -59,6 +67,13 @@ def read_reports():
             "total": len(tests),
             "sha256": sha256(path),
         })
+    from xml.etree import ElementTree
+    unit_path = ROOT / "TestResults/editmode-results.xml"
+    unit = ElementTree.parse(unit_path).getroot()
+    if unit.get("result") != "Passed" or int(unit.get("failed", "1")) != 0 or int(unit.get("total", "0")) == 0:
+        raise ValueError("Missing or failing Unity EditMode tests.")
+    summary.append({"path": "TestResults/editmode-results.xml", "passed": int(unit.get("passed")),
+                    "total": int(unit.get("total")), "sha256": sha256(unit_path)})
     return summary
 
 
@@ -101,7 +116,7 @@ def main():
 """
         with zipfile.ZipFile(app_zip, "a", compression=zipfile.ZIP_DEFLATED, compresslevel=7) as archive:
             archive.writestr("README.md", app_readme)
-            for item in ("Documentation", "TestResults", "Tools/send_command.py", "Tools/send_servo.py", "LICENSE"):
+            for item in ("Documentation", "TestResults", "Tools/send_command.py", "Tools/send_servo.py", "Tools/hdt_client.py", "LICENSE", "NOTICE.md", "LICENSES"):
                 add_files(archive, item)
 
         artifacts = []
@@ -111,8 +126,17 @@ def main():
                 if damaged:
                     raise ValueError(f"Corrupt archive member: {damaged}")
             artifacts.append({"name": path.name, "bytes": path.stat().st_size, "sha256": sha256(path)})
+        try:
+            revision = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, stderr=subprocess.DEVNULL, text=True).strip()
+            dirty = bool(subprocess.check_output(["git", "status", "--porcelain"], cwd=ROOT, text=True).strip())
+        except (OSError, subprocess.CalledProcessError):
+            revision, dirty = None, None
         manifest = {
             "schema": "als-hdt-release-v1",
+            "version": (ROOT / "VERSION").read_text().strip(),
+            "gitRevision": revision,
+            "workingTreeDirty": dirty,
+            "license": "MPL-2.0 (original sources); third-party exceptions in NOTICE.md",
             "packagedAtUtc": datetime.now(timezone.utc).isoformat(),
             "platform": "macOS ARM64 / Mono",
             "unityVersion": json.loads((ROOT / "TestResults/physics-validation.json").read_text())["unityVersion"],
@@ -142,7 +166,7 @@ def main():
 - 真人风格上半身，PhysX 动态双臂和手指；握手、挥手、双手点赞。
 - 一套设备 7 路手臂 + 6 路手掌的逻辑模板；左右侧均可选。
 - 实物轴序、舵机 ID、行程与零位待确认；当前没有实物控制输出。
-- 现有报告：Editor {reports[0]['passed']} 项、独立应用 {reports[1]['passed']} 项、TCP {reports[2]['passed']} 项通过。
+- 现有报告：Editor {reports[0]['passed']} 项、独立应用 {reports[1]['passed']} 项、TCP {reports[2]['passed']} 项、Python {reports[3]['passed']} 项、Unity EditMode {reports[4]['passed']} 项通过。
 - 打包会检查现有报告和文档，不重新执行 Unity 测试；测试范围以 `Documentation/TESTING.md` 为准。
 
 旧版人偶包位于 `Archive-Mannequin-v1/`，不属于当前默认角色。

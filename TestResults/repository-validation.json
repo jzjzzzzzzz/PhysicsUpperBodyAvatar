@@ -1,0 +1,53 @@
+{
+  "mode": "Python contract tests and static repository checks; not Unity physics",
+  "generatedAtUtc": "2026-10-21T18:15:41.949051+00:00",
+  "allPassed": true,
+  "tests": [
+    {
+      "name": "test_client.CommandClientTests.test_empty_response_reports_unavailable_application",
+      "passed": true
+    },
+    {
+      "name": "test_client.CommandClientTests.test_invalid_response_shapes_are_rejected",
+      "passed": true
+    },
+    {
+      "name": "test_client.CommandClientTests.test_missing_newline_and_oversized_response_are_rejected",
+      "passed": true
+    },
+    {
+      "name": "test_client.CommandClientTests.test_nan_is_rejected_before_connecting",
+      "passed": true
+    },
+    {
+      "name": "test_client.CommandClientTests.test_oversized_request_is_rejected_before_connecting",
+      "passed": true
+    },
+    {
+      "name": "test_client.CommandClientTests.test_round_trip_is_newline_delimited_utf8",
+      "passed": true
+    },
+    {
+      "name": "test_client.CommandClientTests.test_send_wrapper_preserves_public_api",
+      "passed": true
+    },
+    {
+      "name": "test_client.CommandClientTests.test_server_rejection_is_returned_not_hidden",
+      "passed": true
+    },
+    {
+      "name": "test_documentation.DocumentationTests.test_local_links_examples_and_channel_order",
+      "passed": true
+    }
+  ],
+  "staticChecks": [
+    {
+      "name": "documentation",
+      "passed": true
+    },
+    {
+      "name": "license-and-boundaries",
+      "passed": true
+    }
+  ]
+}

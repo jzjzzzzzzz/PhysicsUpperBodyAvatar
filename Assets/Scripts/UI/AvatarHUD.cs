@@ -1,3 +1,8 @@
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at https://mozilla.org/MPL/2.0/.
+// SPDX-License-Identifier: MPL-2.0
+// Copyright (c) 2026 ALS HDT Prototype Contributors.
 using System.Linq;
 using System.Text;
 using UnityEngine;
@@ -74,7 +79,7 @@ namespace ALS.HDT
             var side = new DropdownField("Side", new System.Collections.Generic.List<string> { "Right", "Left" }, 0);
             side.AddToClassList("servo-side");
             side.RegisterValueChangedCallback(e => { servoSide = e.newValue == "Left" ? BodySide.Left : BodySide.Right; RefreshServoSliders(); }); fold.Add(side);
-            for (int i = 0; i < 13; i++) {
+            for (int i = 0; i < ServoRigSchema.ChannelCount; i++) {
                 int channel = i; var c = avatar.servoBridge.Profile(servoSide).channels[i];
                 var slider = new Slider(c.id + " " + c.label, c.inputMin, c.inputMax) { showInputField = false, name = "servo-" + c.id };
                 slider.AddToClassList("servo-slider");

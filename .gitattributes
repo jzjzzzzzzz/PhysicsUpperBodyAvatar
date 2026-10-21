@@ -13,3 +13,11 @@
 *.png binary
 *.jpg binary
 *.jpeg binary
+
+# Unity writes empty YAML fields with a trailing space. Keep engine formatting.
+*.unity whitespace=-blank-at-eol
+*.prefab whitespace=-blank-at-eol
+*.asset whitespace=-blank-at-eol
+*.csv text eol=crlf
+
+*.meta whitespace=-blank-at-eol

@@ -1,3 +1,8 @@
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at https://mozilla.org/MPL/2.0/.
+// SPDX-License-Identifier: MPL-2.0
+// Copyright (c) 2026 ALS HDT Prototype Contributors.
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -260,6 +265,7 @@ namespace ALS.HDT.Editor
         {
             if (!File.Exists(ScenePath)) CreateDemo();
             Directory.CreateDirectory("Builds/macOS");
+            PlayerSettings.bundleVersion = File.ReadAllText("VERSION").Trim();
             // Mono ARM64 is included with this editor. IL2CPP is optional and
             // requires the separate macOS IL2CPP support module in Unity Hub.
             PlayerSettings.SetScriptingBackend(NamedBuildTarget.Standalone, ScriptingImplementation.Mono2x);
@@ -270,6 +276,11 @@ namespace ALS.HDT.Editor
                 if (rig) { rig.Validate(); File.WriteAllText("Assets/StreamingAssets/Hardware/ServoRig" + side + ".json", JsonUtility.ToJson(rig, true)); }
             }
             AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
+            string projectNotices = "Assets/StreamingAssets/ThirdPartyNotices";
+            Directory.CreateDirectory(projectNotices);
+            File.Copy("LICENSE", projectNotices + "/Project-MPL-2.0.txt", true);
+            File.Copy("NOTICE.md", projectNotices + "/NOTICE.md", true);
+            File.Copy("LICENSES/Legacy-MIT.txt", projectNotices + "/Legacy-MIT.txt", true);
             string license = "Assets/ThirdParty/MicrosoftRocketbox/LICENSE.md";
             if (File.Exists(license)) {
                 // Package attribution BEFORE BuildPlayer, so the final bundle's

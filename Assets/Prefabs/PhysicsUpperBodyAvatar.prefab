@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &115530407442260448
+--- !u!1 &18333117397730518
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,60 +8,60 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4870328977962763605}
+  - component: {fileID: 2817136353303238088}
   m_Layer: 0
-  m_Name: R_Index_1
+  m_Name: L_Thumb_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4870328977962763605
+--- !u!4 &2817136353303238088
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 115530407442260448}
+  m_GameObject: {fileID: 18333117397730518}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.039, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7623483309393396844}
-  m_Father: {fileID: 372884412915017622}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &118834851692910150
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6983810268408439204}
-  m_Layer: 0
-  m_Name: L_Ring_2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6983810268408439204
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 118834851692910150}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.027, z: 0}
+  m_LocalPosition: {x: 0, y: -0.026, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1679484329716988428}
+  m_Father: {fileID: 7631659402724143333}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &72845377436088219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5747009749360028773}
+  m_Layer: 0
+  m_Name: L_Middle_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5747009749360028773
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72845377436088219}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.044, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1299928397129772893}
+  m_Father: {fileID: 574963516030153215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &180355961267740081
 GameObject:
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: L_Little_0
   role: 7
   side: 1
@@ -148,7 +148,7 @@ MonoBehaviour:
   length: 0.031
   body: {fileID: 2037186267753373041}
   joint: {fileID: 3583193563433507100}
-  target: {fileID: 5063872616161516797}
+  target: {fileID: 143709555064350938}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: -0.19, y: 0.832, z: 0}
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 2668002739054672083}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &4524800459281604535
@@ -280,7 +280,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &880897065288021671
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -379,7 +379,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: L_Ring_0
   role: 7
   side: 1
@@ -389,7 +389,7 @@ MonoBehaviour:
   length: 0.041
   body: {fileID: 864780372745402354}
   joint: {fileID: 4572542657976125673}
-  target: {fileID: 4345295695620118596}
+  target: {fileID: 7080725782299604871}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: -0.208, y: 0.832, z: 0}
@@ -507,7 +507,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 290634167106101575}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &4764872012416748276
@@ -521,7 +521,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &5411898626674367650
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -545,37 +545,6 @@ CapsuleCollider:
   m_Height: 0.05225
   m_Direction: 1
   m_Center: {x: 0, y: -0.0205, z: 0}
---- !u!1 &256915910852577815
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4361645671948681205}
-  m_Layer: 0
-  m_Name: L_Little_2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4361645671948681205
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256915910852577815}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.022, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 674079958138708100}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &287712283948177831
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,8 +574,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 808391498411406284}
-  m_Father: {fileID: 8865564393671898628}
+  - {fileID: 9068714691827369296}
+  m_Father: {fileID: 6455283730180796160}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &293092558066221695
 GameObject:
@@ -683,7 +652,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: L_Index_2
   role: 7
   side: 1
@@ -693,7 +662,7 @@ MonoBehaviour:
   length: 0.021
   body: {fileID: 1447186484525683319}
   joint: {fileID: 1207657594578598826}
-  target: {fileID: 5727195622641686060}
+  target: {fileID: 6479190949832818733}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: -0.247, y: 0.768, z: 0}
@@ -811,7 +780,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 7870185732120970562}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &5935349284003368176
@@ -825,7 +794,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &8746502751591338724
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -849,6 +818,38 @@ CapsuleCollider:
   m_Height: 0.03225
   m_Direction: 1
   m_Center: {x: 0, y: -0.0105, z: 0}
+--- !u!1 &325303922663503396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3838496847740720039}
+  m_Layer: 0
+  m_Name: L_UpperArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3838496847740720039
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325303922663503396}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4506330912265457547}
+  m_Father: {fileID: 6935322279197255208}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &690239741167804287
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,8 +879,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4532806952690489260}
-  m_Father: {fileID: 8865564393671898628}
+  - {fileID: 3838496847740720039}
+  m_Father: {fileID: 6455283730180796160}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &746598036898941137
 GameObject:
@@ -956,7 +957,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: L_Thumb_2
   role: 7
   side: 1
@@ -966,7 +967,7 @@ MonoBehaviour:
   length: 0.021
   body: {fileID: 1829775296638263821}
   joint: {fileID: 4766681456188951812}
-  target: {fileID: 6693871724603638368}
+  target: {fileID: 2817136353303238088}
   bindRelative: {x: 0, y: 0, z: 0, w: 1.0000001}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: -0.29578742, y: 0.8844383, z: 0}
@@ -1084,7 +1085,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 4288785440026767752}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &5830491724173171680
@@ -1098,7 +1099,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &7750581637873067970
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1197,7 +1198,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: R_Ring_1
   role: 7
   side: 2
@@ -1207,7 +1208,7 @@ MonoBehaviour:
   length: 0.027
   body: {fileID: 4581043927537023397}
   joint: {fileID: 2899212676357052130}
-  target: {fileID: 7692578970431029163}
+  target: {fileID: 876012897057599726}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: 0.208, y: 0.791, z: 0}
@@ -1325,7 +1326,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 7759365473569921598}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &6622080816406537138
@@ -1339,7 +1340,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &3197711692341323049
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1438,7 +1439,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: R_Middle_1
   role: 7
   side: 2
@@ -1448,7 +1449,7 @@ MonoBehaviour:
   length: 0.028
   body: {fileID: 9101415898893631929}
   joint: {fileID: 5471540736741505410}
-  target: {fileID: 2645174796558594699}
+  target: {fileID: 7881795922287996431}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: 0.228, y: 0.788, z: 0}
@@ -1566,7 +1567,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 1649940960196934187}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &8891533200088049361
@@ -1580,7 +1581,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &577976427608148855
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1604,7 +1605,7 @@ CapsuleCollider:
   m_Height: 0.03925
   m_Direction: 1
   m_Center: {x: 0, y: -0.014, z: 0}
---- !u!1 &1306395121865972259
+--- !u!1 &895556355485283619
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1612,60 +1613,90 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5305464420387915231}
+  - component: {fileID: 7253644759318854901}
   m_Layer: 0
-  m_Name: L_Thumb_1
+  m_Name: L_Little_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5305464420387915231
+--- !u!4 &7253644759318854901
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306395121865972259}
+  m_GameObject: {fileID: 895556355485283619}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.036, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6693871724603638368}
-  m_Father: {fileID: 5238489515031848385}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1414438801686877098
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2549169906334716948}
-  m_Layer: 0
-  m_Name: R_Thumb_2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2549169906334716948
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1414438801686877098}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.026, z: 0}
+  m_LocalPosition: {x: 0, y: -0.022, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3211800171355830820}
+  m_Father: {fileID: 6923492434333822223}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &978133943632042291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3070474035232568429}
+  m_Layer: 0
+  m_Name: L_Ring_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3070474035232568429
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978133943632042291}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.027, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1153709945350149725}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1169213916892916719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1299928397129772893}
+  m_Layer: 0
+  m_Name: L_Middle_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1299928397129772893
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169213916892916719}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.028, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5747009749360028773}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1462700403694766950
 GameObject:
@@ -1742,7 +1773,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: R_Little_2
   role: 7
   side: 2
@@ -1752,7 +1783,7 @@ MonoBehaviour:
   length: 0.019
   body: {fileID: 8540586501741093025}
   joint: {fileID: 221895928368836288}
-  target: {fileID: 3268881545950930650}
+  target: {fileID: 6158183504893380286}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: 0.19, y: 0.779, z: 0}
@@ -1870,7 +1901,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 531172434347817181}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &8473104631537975833
@@ -1884,7 +1915,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &3325467335487259507
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1908,7 +1939,7 @@ CapsuleCollider:
   m_Height: 0.03025
   m_Direction: 1
   m_Center: {x: 0, y: -0.0095, z: 0}
---- !u!1 &1734481250108363440
+--- !u!1 &1617195548299370007
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1916,29 +1947,93 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1756494002394545885}
+  - component: {fileID: 642798849928980605}
   m_Layer: 0
-  m_Name: R_Thumb_0
+  m_Name: R_Ring_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1756494002394545885
+--- !u!4 &642798849928980605
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734481250108363440}
+  m_GameObject: {fileID: 1617195548299370007}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.46174863, w: 0.8870109}
-  m_LocalPosition: {x: 0.025, y: -0.02, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.012, y: -0.108, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3211800171355830820}
-  m_Father: {fileID: 148664316055766146}
+  - {fileID: 876012897057599726}
+  m_Father: {fileID: 7552906799938303299}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1647831001059858944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7881795922287996431}
+  m_Layer: 0
+  m_Name: R_Middle_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7881795922287996431
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647831001059858944}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.044, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4842741986264401682}
+  m_Father: {fileID: 3074664380733002059}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1836692437661655004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 263662908096047006}
+  m_Layer: 0
+  m_Name: Neck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &263662908096047006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836692437661655004}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.00000007685223, y: 0.36697185, z: 0.013813384}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1973571641482093078}
+  m_Father: {fileID: 6455283730180796160}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1971537087970860727
 GameObject:
@@ -2015,7 +2110,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: L_Middle_2
   role: 7
   side: 1
@@ -2025,7 +2120,7 @@ MonoBehaviour:
   length: 0.023
   body: {fileID: 569947257217441070}
   joint: {fileID: 898398077046235847}
-  target: {fileID: 3926144234037509272}
+  target: {fileID: 1299928397129772893}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: -0.228, y: 0.76, z: 0}
@@ -2143,7 +2238,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 8961297804534095155}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &2139260308025384577
@@ -2157,7 +2252,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &1115944177464775757
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2255,7 +2350,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: L_Forearm
   role: 5
   side: 1
@@ -2265,7 +2360,7 @@ MonoBehaviour:
   length: 0.26
   body: {fileID: 3130471283183844692}
   joint: {fileID: 2770167633787655182}
-  target: {fileID: 2828147219576095387}
+  target: {fileID: 572925851816000484}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: -0.22, y: 1.2, z: 0}
@@ -2383,7 +2478,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 9055102962031806014}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!136 &4626732875319286757
@@ -2484,7 +2579,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: L_Middle_1
   role: 7
   side: 1
@@ -2494,7 +2589,7 @@ MonoBehaviour:
   length: 0.028
   body: {fileID: 7588844275272867968}
   joint: {fileID: 6157224602411716713}
-  target: {fileID: 1451661131173407015}
+  target: {fileID: 5747009749360028773}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: -0.228, y: 0.788, z: 0}
@@ -2612,7 +2707,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 7184748839237174367}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &8246529085479223357
@@ -2626,7 +2721,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &1928166146216282417
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2725,7 +2820,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: R_Index_0
   role: 7
   side: 2
@@ -2735,7 +2830,7 @@ MonoBehaviour:
   length: 0.039
   body: {fileID: 107966369791464854}
   joint: {fileID: 106158369505539237}
-  target: {fileID: 372884412915017622}
+  target: {fileID: 7780500976916224571}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: 0.247, y: 0.832, z: 0}
@@ -2853,7 +2948,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 5646994619577006601}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &7259627867630881787
@@ -2867,7 +2962,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &4204851232669791052
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2891,7 +2986,7 @@ CapsuleCollider:
   m_Height: 0.05025
   m_Direction: 1
   m_Center: {x: 0, y: -0.0195, z: 0}
---- !u!1 &2391375943000453818
+--- !u!1 &2351380973950930351
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2899,31 +2994,31 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 372884412915017622}
+  - component: {fileID: 4506330912265457547}
   m_Layer: 0
-  m_Name: R_Index_0
+  m_Name: L_Elbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &372884412915017622
+--- !u!4 &4506330912265457547
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2391375943000453818}
+  m_GameObject: {fileID: 2351380973950930351}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.027, y: -0.108, z: 0}
+  m_LocalPosition: {x: 0, y: -0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4870328977962763605}
-  m_Father: {fileID: 148664316055766146}
+  - {fileID: 572925851816000484}
+  m_Father: {fileID: 3838496847740720039}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2407602410524685393
+--- !u!1 &2399977259219684643
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2931,31 +3026,35 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9217691142611236213}
+  - component: {fileID: 7552906799938303299}
   m_Layer: 0
-  m_Name: R_Forearm
+  m_Name: R_Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9217691142611236213
+--- !u!4 &7552906799938303299
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2407602410524685393}
+  m_GameObject: {fileID: 2399977259219684643}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 148664316055766146}
-  m_Father: {fileID: 2740379757562658881}
+  - {fileID: 7780500976916224571}
+  - {fileID: 3074664380733002059}
+  - {fileID: 642798849928980605}
+  - {fileID: 6275090755393166922}
+  - {fileID: 4442460382100113874}
+  m_Father: {fileID: 9061864925662800420}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2484687042888907273
+--- !u!1 &2660892486266395383
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2963,28 +3062,60 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4971733561825841601}
+  - component: {fileID: 8303686465257242977}
   m_Layer: 0
-  m_Name: Head
+  m_Name: R_Index_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4971733561825841601
+--- !u!4 &8303686465257242977
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2484687042888907273}
+  m_GameObject: {fileID: 2660892486266395383}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00000006533983, y: 0.0692476, z: 0.021252368}
+  m_LocalPosition: {x: 0, y: -0.025, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6502321324224243102}
+  m_Father: {fileID: 3063464168133812487}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2909025812121843150
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3074664380733002059}
+  m_Layer: 0
+  m_Name: R_Middle_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3074664380733002059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2909025812121843150}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.008, y: -0.108, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7881795922287996431}
+  m_Father: {fileID: 7552906799938303299}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3044417286525814105
 GameObject:
@@ -3061,7 +3192,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: R_Thumb_1
   role: 7
   side: 2
@@ -3071,7 +3202,7 @@ MonoBehaviour:
   length: 0.026
   body: {fileID: 5596877159018240574}
   joint: {fileID: 1470260726499054735}
-  target: {fileID: 3211800171355830820}
+  target: {fileID: 8871003798558865436}
   bindRelative: {x: 0, y: 0, z: 0, w: 1.0000001}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: 0.27448946, y: 0.89935124, z: 0}
@@ -3189,7 +3320,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 5399030997364175756}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &5219400410138605546
@@ -3203,7 +3334,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &2112924882290143923
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3227,69 +3358,6 @@ CapsuleCollider:
   m_Height: 0.04025
   m_Direction: 1
   m_Center: {x: 0, y: -0.013, z: 0}
---- !u!1 &3048024969546530302
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3926144234037509272}
-  m_Layer: 0
-  m_Name: L_Middle_2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3926144234037509272
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3048024969546530302}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.028, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1451661131173407015}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3122659223780171275
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 674079958138708100}
-  m_Layer: 0
-  m_Name: L_Little_1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &674079958138708100
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3122659223780171275}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.031, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4361645671948681205}
-  m_Father: {fileID: 5063872616161516797}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3295576332251627050
 GameObject:
   m_ObjectHideFlags: 0
@@ -3365,7 +3433,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: R_Index_2
   role: 7
   side: 2
@@ -3375,7 +3443,7 @@ MonoBehaviour:
   length: 0.021
   body: {fileID: 8552353188055504059}
   joint: {fileID: 6839253289668927563}
-  target: {fileID: 7623483309393396844}
+  target: {fileID: 8303686465257242977}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: 0.247, y: 0.768, z: 0}
@@ -3493,7 +3561,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 6633010581954651413}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &291213078806855986
@@ -3507,7 +3575,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &1001974959096615823
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3531,7 +3599,7 @@ CapsuleCollider:
   m_Height: 0.03225
   m_Direction: 1
   m_Center: {x: 0, y: -0.0105, z: 0}
---- !u!1 &3360337964695014309
+--- !u!1 &3326312909381293544
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3539,31 +3607,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3211800171355830820}
+  - component: {fileID: 6158183504893380286}
   m_Layer: 0
-  m_Name: R_Thumb_1
+  m_Name: R_Little_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3211800171355830820
+--- !u!4 &6158183504893380286
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3360337964695014309}
+  m_GameObject: {fileID: 3326312909381293544}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.036, z: 0}
+  m_LocalPosition: {x: 0, y: -0.022, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2549169906334716948}
-  m_Father: {fileID: 1756494002394545885}
+  m_Children: []
+  m_Father: {fileID: 3457251842972751296}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3370025350145218546
+--- !u!1 &3399509118383931939
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3571,29 +3638,31 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6502321324224243102}
+  - component: {fileID: 6455283730180796160}
   m_Layer: 0
-  m_Name: Neck
+  m_Name: Torso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6502321324224243102
+--- !u!4 &6455283730180796160
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3370025350145218546}
+  m_GameObject: {fileID: 3399509118383931939}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00000007685223, y: 0.36697185, z: 0.013813384}
+  m_LocalPosition: {x: 0, y: 1.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4971733561825841601}
-  m_Father: {fileID: 8865564393671898628}
+  - {fileID: 263662908096047006}
+  - {fileID: 6935322279197255208}
+  - {fileID: 4266499749981565508}
+  m_Father: {fileID: 8181284293177552408}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3411694533918823371
 GameObject:
@@ -3669,7 +3738,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: L_UpperArm
   role: 3
   side: 1
@@ -3679,7 +3748,7 @@ MonoBehaviour:
   length: 0.3
   body: {fileID: 8498805420121703998}
   joint: {fileID: 6294959111432746518}
-  target: {fileID: 4532806952690489260}
+  target: {fileID: 3838496847740720039}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: -0.22, y: 1.5, z: 0}
@@ -3797,7 +3866,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 3878509849482530095}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!136 &1339402977406724523
@@ -3823,6 +3892,38 @@ CapsuleCollider:
   m_Height: 0.37350002
   m_Direction: 1
   m_Center: {x: 0, y: -0.15, z: 0}
+--- !u!1 &3537880575748035154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9061864925662800420}
+  m_Layer: 0
+  m_Name: R_Forearm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9061864925662800420
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3537880575748035154}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7552906799938303299}
+  m_Father: {fileID: 7264544755649693496}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3713573836110063220
 GameObject:
   m_ObjectHideFlags: 0
@@ -3898,7 +3999,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: L_Ring_2
   role: 7
   side: 1
@@ -3908,7 +4009,7 @@ MonoBehaviour:
   length: 0.022
   body: {fileID: 1736175029799506252}
   joint: {fileID: 4265613671769519891}
-  target: {fileID: 6983810268408439204}
+  target: {fileID: 3070474035232568429}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: -0.208, y: 0.764, z: 0}
@@ -4026,7 +4127,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 3032644596543542115}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &8309310168265936708
@@ -4040,7 +4141,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &150625999689309180
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4064,7 +4165,7 @@ CapsuleCollider:
   m_Height: 0.03325
   m_Direction: 1
   m_Center: {x: 0, y: -0.011, z: 0}
---- !u!1 &3924161059507248218
+--- !u!1 &3943186345594501595
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4072,31 +4173,62 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5238489515031848385}
+  - component: {fileID: 6479190949832818733}
   m_Layer: 0
-  m_Name: L_Thumb_0
+  m_Name: L_Index_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5238489515031848385
+--- !u!4 &6479190949832818733
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3924161059507248218}
+  m_GameObject: {fileID: 3943186345594501595}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.46174863, w: 0.8870109}
-  m_LocalPosition: {x: -0.025, y: -0.02, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.025, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7231438590525300696}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4014066864079918721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7080725782299604871}
+  m_Layer: 0
+  m_Name: L_Ring_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7080725782299604871
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4014066864079918721}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.012, y: -0.108, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5305464420387915231}
-  m_Father: {fileID: 4112437059264069972}
+  - {fileID: 1153709945350149725}
+  m_Father: {fileID: 5823248053770779365}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4310415057562069648
+--- !u!1 &4632389833664914404
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4104,159 +4236,60 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4936817603921433279}
+  - component: {fileID: 7860785125914002208}
   m_Layer: 0
-  m_Name: L_Elbow
+  m_Name: R_Ring_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4936817603921433279
+--- !u!4 &7860785125914002208
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4310415057562069648}
+  m_GameObject: {fileID: 4632389833664914404}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.027, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 876012897057599726}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4645427426694561669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7264544755649693496}
+  m_Layer: 0
+  m_Name: R_Elbow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7264544755649693496
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4645427426694561669}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2828147219576095387}
-  m_Father: {fileID: 4532806952690489260}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4351679842036202180
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1087597596801515576}
-  m_Layer: 0
-  m_Name: L_Middle_0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1087597596801515576
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4351679842036202180}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.008, y: -0.108, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1451661131173407015}
-  m_Father: {fileID: 4112437059264069972}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4361204754288258141
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8865564393671898628}
-  m_Layer: 0
-  m_Name: Torso
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8865564393671898628
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4361204754288258141}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.23, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6502321324224243102}
-  - {fileID: 6935322279197255208}
-  - {fileID: 4266499749981565508}
-  m_Father: {fileID: 8181284293177552408}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4578989132533963601
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4532806952690489260}
-  m_Layer: 0
-  m_Name: L_UpperArm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4532806952690489260
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4578989132533963601}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4936817603921433279}
-  m_Father: {fileID: 6935322279197255208}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4618586878372596900
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5693861341004167457}
-  m_Layer: 0
-  m_Name: L_Index_1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5693861341004167457
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4618586878372596900}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.039, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5727195622641686060}
-  m_Father: {fileID: 4538228297039572221}
+  - {fileID: 9061864925662800420}
+  m_Father: {fileID: 9068714691827369296}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4705097982035313597
 GameObject:
@@ -4309,7 +4342,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16a6aea93d98e41cc82f9c2ad5a7fd0f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.AvatarController
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.AvatarController
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
   gestures: {fileID: 5723923137673141386}
   bones:
@@ -4408,7 +4441,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f09bfef6df60e462f906fc91f77089d9, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.GesturePlayer
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.GesturePlayer
   library: {fileID: 11400000, guid: a13390dec43334ffc9e8eb22002f5f2f, type: 2}
 --- !u!114 &5338363135668631481
 MonoBehaviour:
@@ -4421,7 +4454,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef924e503eff54e30bbb211989714d7e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ServoAvatarBridge
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ServoAvatarBridge
   leftProfile: {fileID: 11400000, guid: 402e5d48840ac4eee8a69013f7448257, type: 2}
   rightProfile: {fileID: 11400000, guid: ac09d942dc41a45f98d30a2cc961c61e, type: 2}
   enforceSevenArmSixHand: 1
@@ -4436,9 +4469,14 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfeec03afa6774506b6e32da87cf4ea6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.LocalCommandServer
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.LocalCommandServer
   avatar: {fileID: 1277608060082111203}
   port: 8765
+  maximumClients: 4
+  queueCapacity: 32
+  commandsPerFrame: 8
+  ioTimeoutMs: 4000
+  commandTimeoutMs: 5000
 --- !u!114 &3290457823122134279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4450,44 +4488,8 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 63768545376134893a9756ff18a996d0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.RuntimeVerification
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.RuntimeVerification
   avatar: {fileID: 1277608060082111203}
---- !u!1 &4758075711161461704
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4112437059264069972}
-  m_Layer: 0
-  m_Name: L_Hand
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4112437059264069972
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4758075711161461704}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.26, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4538228297039572221}
-  - {fileID: 1087597596801515576}
-  - {fileID: 4345295695620118596}
-  - {fileID: 5063872616161516797}
-  - {fileID: 5238489515031848385}
-  m_Father: {fileID: 2828147219576095387}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4808567773085103324
 GameObject:
   m_ObjectHideFlags: 0
@@ -4563,7 +4565,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: L_Index_0
   role: 7
   side: 1
@@ -4573,7 +4575,7 @@ MonoBehaviour:
   length: 0.039
   body: {fileID: 3489125225826834477}
   joint: {fileID: 6807748146811065100}
-  target: {fileID: 4538228297039572221}
+  target: {fileID: 8123251269385941981}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: -0.247, y: 0.832, z: 0}
@@ -4691,7 +4693,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 7990296264239213737}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &6027194721580071905
@@ -4705,7 +4707,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &190714222042048090
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4729,7 +4731,7 @@ CapsuleCollider:
   m_Height: 0.05025
   m_Direction: 1
   m_Center: {x: 0, y: -0.0195, z: 0}
---- !u!1 &4854408840915277973
+--- !u!1 &4921194480492634476
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4737,29 +4739,29 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5063872616161516797}
+  - component: {fileID: 8871003798558865436}
   m_Layer: 0
-  m_Name: L_Little_0
+  m_Name: R_Thumb_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5063872616161516797
+--- !u!4 &8871003798558865436
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4854408840915277973}
+  m_GameObject: {fileID: 4921194480492634476}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: -0.108, z: 0}
+  m_LocalPosition: {x: 0, y: -0.036, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 674079958138708100}
-  m_Father: {fileID: 4112437059264069972}
+  - {fileID: 4009747406826610677}
+  m_Father: {fileID: 4442460382100113874}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5031024519238967684
 GameObject:
@@ -4836,7 +4838,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: R_Little_0
   role: 7
   side: 2
@@ -4846,7 +4848,7 @@ MonoBehaviour:
   length: 0.031
   body: {fileID: 1145062445224975491}
   joint: {fileID: 8247148525054732650}
-  target: {fileID: 6621789150621049591}
+  target: {fileID: 6275090755393166922}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: 0.19, y: 0.832, z: 0}
@@ -4964,7 +4966,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 7132053810890492862}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &3307228919223829122
@@ -4978,7 +4980,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &1739532840645283357
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5002,6 +5004,102 @@ CapsuleCollider:
   m_Height: 0.04225
   m_Direction: 1
   m_Center: {x: 0, y: -0.0155, z: 0}
+--- !u!1 &5125127448751938472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 509772568376877616}
+  m_Layer: 0
+  m_Name: L_Thumb_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &509772568376877616
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5125127448751938472}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.46174863, w: 0.8870109}
+  m_LocalPosition: {x: -0.025, y: -0.02, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7631659402724143333}
+  m_Father: {fileID: 5823248053770779365}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5328490692264498232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6923492434333822223}
+  m_Layer: 0
+  m_Name: L_Little_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6923492434333822223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5328490692264498232}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.031, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7253644759318854901}
+  m_Father: {fileID: 143709555064350938}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5397867749797197561
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 574963516030153215}
+  m_Layer: 0
+  m_Name: L_Middle_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &574963516030153215
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5397867749797197561}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.008, y: -0.108, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5747009749360028773}
+  m_Father: {fileID: 5823248053770779365}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5411090711959966361
 GameObject:
   m_ObjectHideFlags: 0
@@ -5150,13 +5248,45 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1823d7b8f36064ae2a3b8e348aa408e5, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.AnatomicalSkin
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.AnatomicalSkin
   avatar: {fileID: 1277608060082111203}
   materials:
   - {fileID: 2100000, guid: 628154b6ff9c54e1ca7574495c4fdf13, type: 2}
   - {fileID: 2100000, guid: 364b38d61b61c47c79dfbbd3797598b3, type: 2}
   - {fileID: 2100000, guid: 43c37108410ba4e43b5b57e753e9f377, type: 2}
   - {fileID: 2100000, guid: b959cbe77868e4fdc9d51a2e8ba83122, type: 2}
+--- !u!1 &5468639077616961093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4442460382100113874}
+  m_Layer: 0
+  m_Name: R_Thumb_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4442460382100113874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5468639077616961093}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.46174863, w: 0.8870109}
+  m_LocalPosition: {x: 0.025, y: -0.02, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8871003798558865436}
+  m_Father: {fileID: 7552906799938303299}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5518237081164504721
 GameObject:
   m_ObjectHideFlags: 0
@@ -5231,7 +5361,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: L_Elbow
   role: 4
   side: 1
@@ -5241,7 +5371,7 @@ MonoBehaviour:
   length: 0
   body: {fileID: 342770829636949023}
   joint: {fileID: 369912196869905721}
-  target: {fileID: 4936817603921433279}
+  target: {fileID: 4506330912265457547}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: -0.22, y: 1.2, z: 0}
@@ -5359,7 +5489,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 6364285339796445011}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!135 &7808476672391199374
@@ -5383,70 +5513,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.022
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &5529111798967688978
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 808391498411406284}
-  m_Layer: 0
-  m_Name: R_UpperArm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &808391498411406284
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5529111798967688978}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2740379757562658881}
-  m_Father: {fileID: 4266499749981565508}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5587318403278897278
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3634790421526258633}
-  m_Layer: 0
-  m_Name: R_Ring_0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3634790421526258633
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5587318403278897278}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.012, y: -0.108, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7692578970431029163}
-  m_Father: {fileID: 148664316055766146}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5805827265026662433
 GameObject:
   m_ObjectHideFlags: 0
@@ -5522,7 +5588,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: L_Little_1
   role: 7
   side: 1
@@ -5532,7 +5598,7 @@ MonoBehaviour:
   length: 0.022
   body: {fileID: 5894188925500153769}
   joint: {fileID: 1524291347537054973}
-  target: {fileID: 674079958138708100}
+  target: {fileID: 6923492434333822223}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: -0.19, y: 0.801, z: 0}
@@ -5650,7 +5716,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 1548992696972279613}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &5908820352577582164
@@ -5664,7 +5730,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &940395014695844963
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5688,42 +5754,6 @@ CapsuleCollider:
   m_Height: 0.03325
   m_Direction: 1
   m_Center: {x: 0, y: -0.011, z: 0}
---- !u!1 &5886965375904548234
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 148664316055766146}
-  m_Layer: 0
-  m_Name: R_Hand
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &148664316055766146
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5886965375904548234}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.26, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 372884412915017622}
-  - {fileID: 1447784271285720789}
-  - {fileID: 3634790421526258633}
-  - {fileID: 6621789150621049591}
-  - {fileID: 1756494002394545885}
-  m_Father: {fileID: 9217691142611236213}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5999261052318982025
 GameObject:
   m_ObjectHideFlags: 0
@@ -5871,12 +5901,12 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28b47c62a8cd4455e9c785f168128eb4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.RealisticAvatarSkin
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.RealisticAvatarSkin
   assetName: Microsoft Rocketbox / Male_Adult_04
   source: https://github.com/microsoft/Microsoft-Rocketbox
   license: "MIT \u2014 Copyright (c) 2020 Microsoft"
   skin: {fileID: 2353291697361871519}
---- !u!1 &6079787695117411932
+--- !u!1 &6154108937925017258
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5884,29 +5914,29 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2650010699553959621}
+  - component: {fileID: 8123251269385941981}
   m_Layer: 0
-  m_Name: R_Little_1
+  m_Name: L_Index_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2650010699553959621
+--- !u!4 &8123251269385941981
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6079787695117411932}
+  m_GameObject: {fileID: 6154108937925017258}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.031, z: 0}
+  m_LocalPosition: {x: -0.027, y: -0.108, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3268881545950930650}
-  m_Father: {fileID: 6621789150621049591}
+  - {fileID: 7231438590525300696}
+  m_Father: {fileID: 5823248053770779365}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6199949975820168864
 GameObject:
@@ -5983,7 +6013,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: L_Hand
   role: 6
   side: 1
@@ -5993,7 +6023,7 @@ MonoBehaviour:
   length: 0.115
   body: {fileID: 5593782821056772652}
   joint: {fileID: 3848368290933521929}
-  target: {fileID: 4112437059264069972}
+  target: {fileID: 5823248053770779365}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: -0.22, y: 0.94, z: 0}
@@ -6111,7 +6141,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 1438182030869458149}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &1898345567749155336
@@ -6125,7 +6155,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!65 &8187486155978220322
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6222,7 +6252,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: R_Ring_0
   role: 7
   side: 2
@@ -6232,7 +6262,7 @@ MonoBehaviour:
   length: 0.041
   body: {fileID: 7525389730417029840}
   joint: {fileID: 4738655279993903236}
-  target: {fileID: 3634790421526258633}
+  target: {fileID: 642798849928980605}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: 0.208, y: 0.832, z: 0}
@@ -6350,7 +6380,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 3678226784899837535}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &5048887316545172733
@@ -6364,7 +6394,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &8632360602255528549
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6388,7 +6418,7 @@ CapsuleCollider:
   m_Height: 0.05225
   m_Direction: 1
   m_Center: {x: 0, y: -0.0205, z: 0}
---- !u!1 &6313237005519874314
+--- !u!1 &6345306727846200130
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6396,7 +6426,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 583133931277434}
+  - component: {fileID: 4842741986264401682}
   m_Layer: 0
   m_Name: R_Middle_2
   m_TagString: Untagged
@@ -6404,22 +6434,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &583133931277434
+--- !u!4 &4842741986264401682
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6313237005519874314}
+  m_GameObject: {fileID: 6345306727846200130}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.028, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2645174796558594699}
+  m_Father: {fileID: 7881795922287996431}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6319973228981291842
+--- !u!1 &6821987502383231173
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6427,92 +6457,28 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1679484329716988428}
+  - component: {fileID: 4009747406826610677}
   m_Layer: 0
-  m_Name: L_Ring_1
+  m_Name: R_Thumb_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1679484329716988428
+--- !u!4 &4009747406826610677
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6319973228981291842}
+  m_GameObject: {fileID: 6821987502383231173}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.041, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6983810268408439204}
-  m_Father: {fileID: 4345295695620118596}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6544887449080767068
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4345295695620118596}
-  m_Layer: 0
-  m_Name: L_Ring_0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4345295695620118596
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6544887449080767068}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.012, y: -0.108, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1679484329716988428}
-  m_Father: {fileID: 4112437059264069972}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6758379561659178160
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 282988802279375905}
-  m_Layer: 0
-  m_Name: R_Ring_2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &282988802279375905
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6758379561659178160}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.027, z: 0}
+  m_LocalPosition: {x: 0, y: -0.026, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7692578970431029163}
+  m_Father: {fileID: 8871003798558865436}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6910944541369125452
 GameObject:
@@ -6589,7 +6555,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: L_Little_2
   role: 7
   side: 1
@@ -6599,7 +6565,7 @@ MonoBehaviour:
   length: 0.019
   body: {fileID: 6860842736482210974}
   joint: {fileID: 5695045275510772570}
-  target: {fileID: 4361645671948681205}
+  target: {fileID: 7253644759318854901}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: -0.19, y: 0.779, z: 0}
@@ -6717,7 +6683,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 1566413679135908725}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &6430511808064458965
@@ -6731,7 +6697,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &2021635186880460702
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6830,7 +6796,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: L_Ring_1
   role: 7
   side: 1
@@ -6840,7 +6806,7 @@ MonoBehaviour:
   length: 0.027
   body: {fileID: 3143881171157628578}
   joint: {fileID: 8195846727233732895}
-  target: {fileID: 1679484329716988428}
+  target: {fileID: 1153709945350149725}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: -0.208, y: 0.791, z: 0}
@@ -6958,7 +6924,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 5423528322976432399}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &6085348654575889332
@@ -6972,7 +6938,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &6568759736604319200
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6996,69 +6962,6 @@ CapsuleCollider:
   m_Height: 0.03825
   m_Direction: 1
   m_Center: {x: 0, y: -0.0135, z: 0}
---- !u!1 &7041466333269121851
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1451661131173407015}
-  m_Layer: 0
-  m_Name: L_Middle_1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1451661131173407015
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7041466333269121851}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.044, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3926144234037509272}
-  m_Father: {fileID: 1087597596801515576}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7124416889959234425
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5727195622641686060}
-  m_Layer: 0
-  m_Name: L_Index_2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5727195622641686060
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7124416889959234425}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.025, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5693861341004167457}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7215657133680355138
 GameObject:
   m_ObjectHideFlags: 0
@@ -7131,7 +7034,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: Torso
   role: 0
   side: 0
@@ -7141,7 +7044,7 @@ MonoBehaviour:
   length: 0
   body: {fileID: 2896238945142656586}
   joint: {fileID: 0}
-  target: {fileID: 8865564393671898628}
+  target: {fileID: 6455283730180796160}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: 0, y: 1.23, z: 0}
@@ -7169,7 +7072,7 @@ CapsuleCollider:
   m_Height: 0.55
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &7249598755524798017
+--- !u!1 &7282846826949455497
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7177,29 +7080,29 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2828147219576095387}
+  - component: {fileID: 876012897057599726}
   m_Layer: 0
-  m_Name: L_Forearm
+  m_Name: R_Ring_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2828147219576095387
+--- !u!4 &876012897057599726
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7249598755524798017}
+  m_GameObject: {fileID: 7282846826949455497}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.041, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4112437059264069972}
-  m_Father: {fileID: 4936817603921433279}
+  - {fileID: 7860785125914002208}
+  m_Father: {fileID: 642798849928980605}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7308205444756874433
 GameObject:
@@ -7276,7 +7179,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: R_Thumb_2
   role: 7
   side: 2
@@ -7286,7 +7189,7 @@ MonoBehaviour:
   length: 0.021
   body: {fileID: 3008615747384017089}
   joint: {fileID: 4402689110928236417}
-  target: {fileID: 2549169906334716948}
+  target: {fileID: 4009747406826610677}
   bindRelative: {x: 0, y: 0, z: 0, w: 1.0000001}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: 0.29578742, y: 0.8844383, z: 0}
@@ -7404,7 +7307,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 466077750209727553}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &7710724331818173339
@@ -7418,7 +7321,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &7255618998653457189
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7517,7 +7420,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: R_Ring_2
   role: 7
   side: 2
@@ -7527,7 +7430,7 @@ MonoBehaviour:
   length: 0.022
   body: {fileID: 8355194923219071329}
   joint: {fileID: 1432898762699768689}
-  target: {fileID: 282988802279375905}
+  target: {fileID: 7860785125914002208}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: 0.208, y: 0.764, z: 0}
@@ -7645,7 +7548,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 7638169134765844561}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &3881893922337195701
@@ -7659,7 +7562,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &1690100516267162217
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7758,7 +7661,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: L_Index_1
   role: 7
   side: 1
@@ -7768,7 +7671,7 @@ MonoBehaviour:
   length: 0.025
   body: {fileID: 4266223645009849016}
   joint: {fileID: 3285786172330598652}
-  target: {fileID: 5693861341004167457}
+  target: {fileID: 7231438590525300696}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: -0.247, y: 0.793, z: 0}
@@ -7886,7 +7789,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 3111720975946599038}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &72895322442189108
@@ -7900,7 +7803,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &6890221076124151864
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7999,7 +7902,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: R_Index_1
   role: 7
   side: 2
@@ -8009,7 +7912,7 @@ MonoBehaviour:
   length: 0.025
   body: {fileID: 2157580824997115623}
   joint: {fileID: 2097701390886082439}
-  target: {fileID: 4870328977962763605}
+  target: {fileID: 3063464168133812487}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: 0.247, y: 0.793, z: 0}
@@ -8127,7 +8030,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 2882213578114903734}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &7211670355501874000
@@ -8141,7 +8044,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &7617706540246819889
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8165,6 +8068,38 @@ CapsuleCollider:
   m_Height: 0.03625
   m_Direction: 1
   m_Center: {x: 0, y: -0.0125, z: 0}
+--- !u!1 &7431884494043508548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 143709555064350938}
+  m_Layer: 0
+  m_Name: L_Little_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &143709555064350938
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7431884494043508548}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.03, y: -0.108, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6923492434333822223}
+  m_Father: {fileID: 5823248053770779365}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7498600759803902834
 GameObject:
   m_ObjectHideFlags: 0
@@ -8239,7 +8174,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: Head
   role: 2
   side: 0
@@ -8249,7 +8184,7 @@ MonoBehaviour:
   length: 0.25
   body: {fileID: 3780077079379098500}
   joint: {fileID: 7258183954762336337}
-  target: {fileID: 4971733561825841601}
+  target: {fileID: 1973571641482093078}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: -0.00000014219206, y: 1.6662195, z: 0.03506575}
@@ -8367,7 +8302,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 4534427019220817224}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!135 &5877724902538709963
@@ -8391,6 +8326,37 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.105
   m_Center: {x: 0, y: 0.12, z: 0}
+--- !u!1 &7601820853940876230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1973571641482093078}
+  m_Layer: 0
+  m_Name: Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1973571641482093078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7601820853940876230}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.00000006533983, y: 0.0692476, z: 0.021252368}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 263662908096047006}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7650249491633126199
 GameObject:
   m_ObjectHideFlags: 0
@@ -8466,7 +8432,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: R_Thumb_0
   role: 7
   side: 2
@@ -8476,7 +8442,7 @@ MonoBehaviour:
   length: 0.036
   body: {fileID: 3087969566104912794}
   joint: {fileID: 9170282604902339920}
-  target: {fileID: 1756494002394545885}
+  target: {fileID: 4442460382100113874}
   bindRelative: {x: 0, y: 0, z: 0.46174863, w: 0.8870109}
   targetRest: {x: 0, y: 0, z: 0.4617486, w: 0.8870108}
   resetPosition: {x: 0.245, y: 0.91999996, z: 0}
@@ -8594,7 +8560,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 6136452479282967952}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &6165284453402656063
@@ -8608,7 +8574,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &3111882296285902676
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8707,7 +8673,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: R_Hand
   role: 6
   side: 2
@@ -8717,7 +8683,7 @@ MonoBehaviour:
   length: 0.115
   body: {fileID: 8550577616095154384}
   joint: {fileID: 2343972402916275755}
-  target: {fileID: 148664316055766146}
+  target: {fileID: 7552906799938303299}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: 0.22, y: 0.94, z: 0}
@@ -8835,7 +8801,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 1067177666980765160}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &4875570781043487355
@@ -8849,7 +8815,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!65 &8669310819179265445
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8871,7 +8837,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.08, y: 0.11, z: 0.038}
   m_Center: {x: 0, y: -0.055, z: 0}
---- !u!1 &7689917392394082144
+--- !u!1 &8015297934208962180
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8879,92 +8845,29 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1447784271285720789}
+  - component: {fileID: 9068714691827369296}
   m_Layer: 0
-  m_Name: R_Middle_0
+  m_Name: R_UpperArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1447784271285720789
+--- !u!4 &9068714691827369296
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7689917392394082144}
+  m_GameObject: {fileID: 8015297934208962180}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.008, y: -0.108, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2645174796558594699}
-  m_Father: {fileID: 148664316055766146}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7739784273104368272
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2645174796558594699}
-  m_Layer: 0
-  m_Name: R_Middle_1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2645174796558594699
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7739784273104368272}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.044, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 583133931277434}
-  m_Father: {fileID: 1447784271285720789}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7825339618193922494
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7623483309393396844}
-  m_Layer: 0
-  m_Name: R_Index_2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7623483309393396844
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7825339618193922494}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.025, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4870328977962763605}
+  - {fileID: 7264544755649693496}
+  m_Father: {fileID: 4266499749981565508}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8016128156608723385
 GameObject:
@@ -9041,7 +8944,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: L_Thumb_1
   role: 7
   side: 1
@@ -9051,7 +8954,7 @@ MonoBehaviour:
   length: 0.026
   body: {fileID: 6617023651344134017}
   joint: {fileID: 1082427090002636402}
-  target: {fileID: 5305464420387915231}
+  target: {fileID: 7631659402724143333}
   bindRelative: {x: 0, y: 0, z: 0, w: 1.0000001}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: -0.27448946, y: 0.89935124, z: 0}
@@ -9169,7 +9072,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 6687790120884941642}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &5870549143456037748
@@ -9183,7 +9086,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &8300356111928449644
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9281,7 +9184,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: R_Forearm
   role: 5
   side: 2
@@ -9291,7 +9194,7 @@ MonoBehaviour:
   length: 0.26
   body: {fileID: 8743945399022662337}
   joint: {fileID: 1674809803342710968}
-  target: {fileID: 9217691142611236213}
+  target: {fileID: 9061864925662800420}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: 0.22, y: 1.2, z: 0}
@@ -9409,7 +9312,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 3864720829044098916}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!136 &4232752105192119866
@@ -9435,38 +9338,6 @@ CapsuleCollider:
   m_Height: 0.3155
   m_Direction: 1
   m_Center: {x: 0, y: -0.13, z: 0}
---- !u!1 &8080533805810227446
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2740379757562658881}
-  m_Layer: 0
-  m_Name: R_Elbow
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2740379757562658881
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8080533805810227446}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 9217691142611236213}
-  m_Father: {fileID: 808391498411406284}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8139755110625218688
 GameObject:
   m_ObjectHideFlags: 0
@@ -9541,7 +9412,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: R_UpperArm
   role: 3
   side: 2
@@ -9551,7 +9422,7 @@ MonoBehaviour:
   length: 0.3
   body: {fileID: 484922687520612954}
   joint: {fileID: 2026819041036593025}
-  target: {fileID: 808391498411406284}
+  target: {fileID: 9068714691827369296}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: 0.22, y: 1.5, z: 0}
@@ -9669,7 +9540,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 7843290016034742289}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!136 &7569553732987273292
@@ -9695,6 +9566,38 @@ CapsuleCollider:
   m_Height: 0.37350002
   m_Direction: 1
   m_Center: {x: 0, y: -0.15, z: 0}
+--- !u!1 &8174854678235059085
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6275090755393166922}
+  m_Layer: 0
+  m_Name: R_Little_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6275090755393166922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8174854678235059085}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.03, y: -0.108, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3457251842972751296}
+  m_Father: {fileID: 7552906799938303299}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8193709919267361572
 GameObject:
   m_ObjectHideFlags: 0
@@ -9770,7 +9673,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: R_Little_1
   role: 7
   side: 2
@@ -9780,7 +9683,7 @@ MonoBehaviour:
   length: 0.022
   body: {fileID: 3726181424466207906}
   joint: {fileID: 7320149633065553898}
-  target: {fileID: 2650010699553959621}
+  target: {fileID: 3457251842972751296}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: 0.19, y: 0.801, z: 0}
@@ -9898,7 +9801,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 1205288099099290561}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &5204297694025600159
@@ -9912,7 +9815,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &1725304059155424655
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9936,7 +9839,7 @@ CapsuleCollider:
   m_Height: 0.03325
   m_Direction: 1
   m_Center: {x: 0, y: -0.011, z: 0}
---- !u!1 &8229849482576420714
+--- !u!1 &8201735194709726461
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9944,29 +9847,65 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6621789150621049591}
+  - component: {fileID: 7631659402724143333}
   m_Layer: 0
-  m_Name: R_Little_0
+  m_Name: L_Thumb_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6621789150621049591
+--- !u!4 &7631659402724143333
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8229849482576420714}
+  m_GameObject: {fileID: 8201735194709726461}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03, y: -0.108, z: 0}
+  m_LocalPosition: {x: 0, y: -0.036, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2650010699553959621}
-  m_Father: {fileID: 148664316055766146}
+  - {fileID: 2817136353303238088}
+  m_Father: {fileID: 509772568376877616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8265388499121170065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5823248053770779365}
+  m_Layer: 0
+  m_Name: L_Hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5823248053770779365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8265388499121170065}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.26, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8123251269385941981}
+  - {fileID: 574963516030153215}
+  - {fileID: 7080725782299604871}
+  - {fileID: 143709555064350938}
+  - {fileID: 509772568376877616}
+  m_Father: {fileID: 572925851816000484}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8277692499537567133
 GameObject:
@@ -10040,7 +9979,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: Neck
   role: 1
   side: 0
@@ -10050,7 +9989,7 @@ MonoBehaviour:
   length: 0.08
   body: {fileID: 8753903670316814661}
   joint: {fileID: 0}
-  target: {fileID: 6502321324224243102}
+  target: {fileID: 263662908096047006}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: -0.00000007685223, y: 1.5969719, z: 0.013813384}
@@ -10152,7 +10091,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: R_Elbow
   role: 4
   side: 2
@@ -10162,7 +10101,7 @@ MonoBehaviour:
   length: 0
   body: {fileID: 1536086771575662817}
   joint: {fileID: 7104114827288045784}
-  target: {fileID: 2740379757562658881}
+  target: {fileID: 7264544755649693496}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: 0.22, y: 1.2, z: 0}
@@ -10280,7 +10219,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 7578143187264267471}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!135 &3845245334924980249
@@ -10333,39 +10272,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8865564393671898628}
+  - {fileID: 6455283730180796160}
   m_Father: {fileID: 7929361666410801928}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &8423545382425806947
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3268881545950930650}
-  m_Layer: 0
-  m_Name: R_Little_2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3268881545950930650
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8423545382425806947}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.022, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2650010699553959621}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8527023898446311015
 GameObject:
@@ -10442,7 +10350,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: R_Middle_0
   role: 7
   side: 2
@@ -10452,7 +10360,7 @@ MonoBehaviour:
   length: 0.044
   body: {fileID: 4072007775262504862}
   joint: {fileID: 990905848357092159}
-  target: {fileID: 1447784271285720789}
+  target: {fileID: 3074664380733002059}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: 0.228, y: 0.832, z: 0}
@@ -10570,7 +10478,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 1071501756435058596}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &752043245916307112
@@ -10584,7 +10492,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &1716272129061903849
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10608,7 +10516,7 @@ CapsuleCollider:
   m_Height: 0.05525
   m_Direction: 1
   m_Center: {x: 0, y: -0.022, z: 0}
---- !u!1 &8693569008172879721
+--- !u!1 &8557100513330114746
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10616,29 +10524,61 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7692578970431029163}
+  - component: {fileID: 3457251842972751296}
   m_Layer: 0
-  m_Name: R_Ring_1
+  m_Name: R_Little_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7692578970431029163
+--- !u!4 &3457251842972751296
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8693569008172879721}
+  m_GameObject: {fileID: 8557100513330114746}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.041, z: 0}
+  m_LocalPosition: {x: 0, y: -0.031, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 282988802279375905}
-  m_Father: {fileID: 3634790421526258633}
+  - {fileID: 6158183504893380286}
+  m_Father: {fileID: 6275090755393166922}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8591264154028034969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7231438590525300696}
+  m_Layer: 0
+  m_Name: L_Index_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7231438590525300696
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8591264154028034969}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.039, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6479190949832818733}
+  m_Father: {fileID: 8123251269385941981}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8766761234502065517
 GameObject:
@@ -10715,7 +10655,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: L_Middle_0
   role: 7
   side: 1
@@ -10725,7 +10665,7 @@ MonoBehaviour:
   length: 0.044
   body: {fileID: 4793324926884049111}
   joint: {fileID: 73600002174310000}
-  target: {fileID: 1087597596801515576}
+  target: {fileID: 574963516030153215}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: -0.228, y: 0.832, z: 0}
@@ -10843,7 +10783,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 9144213955262294485}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &5433021320888354257
@@ -10857,7 +10797,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &8801204308077386115
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10881,37 +10821,6 @@ CapsuleCollider:
   m_Height: 0.05525
   m_Direction: 1
   m_Center: {x: 0, y: -0.022, z: 0}
---- !u!1 &8859552639660357520
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6693871724603638368}
-  m_Layer: 0
-  m_Name: L_Thumb_2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6693871724603638368
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8859552639660357520}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.026, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5305464420387915231}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8864855963095862168
 GameObject:
   m_ObjectHideFlags: 0
@@ -10987,7 +10896,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: R_Middle_2
   role: 7
   side: 2
@@ -10997,7 +10906,7 @@ MonoBehaviour:
   length: 0.023
   body: {fileID: 1959745885753228106}
   joint: {fileID: 4933894007221114203}
-  target: {fileID: 583133931277434}
+  target: {fileID: 4842741986264401682}
   bindRelative: {x: 0, y: 0, z: 0, w: 1}
   targetRest: {x: 0, y: 0, z: 0, w: 1}
   resetPosition: {x: 0.228, y: 0.76, z: 0}
@@ -11115,7 +11024,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 1452006741860502554}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &878005640243915945
@@ -11129,7 +11038,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &101325206847365981
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11153,38 +11062,6 @@ CapsuleCollider:
   m_Height: 0.03425
   m_Direction: 1
   m_Center: {x: 0, y: -0.0115, z: 0}
---- !u!1 &8951404556881726560
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4538228297039572221}
-  m_Layer: 0
-  m_Name: L_Index_0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4538228297039572221
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8951404556881726560}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.027, y: -0.108, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5693861341004167457}
-  m_Father: {fileID: 4112437059264069972}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8960241345145843425
 GameObject:
   m_ObjectHideFlags: 0
@@ -11260,7 +11137,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 826fe4464fb6c437da7075012e04050e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.PhysicsBone
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.PhysicsBone
   id: L_Thumb_0
   role: 7
   side: 1
@@ -11270,7 +11147,7 @@ MonoBehaviour:
   length: 0.036
   body: {fileID: 4220695016707195604}
   joint: {fileID: 2287390351018221286}
-  target: {fileID: 5238489515031848385}
+  target: {fileID: 509772568376877616}
   bindRelative: {x: 0, y: 0, z: -0.46174863, w: 0.8870109}
   targetRest: {x: 0, y: 0, z: -0.4617486, w: 0.8870108}
   resetPosition: {x: -0.245, y: 0.91999996, z: 0}
@@ -11388,7 +11265,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c18ac40192f4989ab3383bef0f33b0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.JointMotor
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.JointMotor
   bone: {fileID: 5404787464606799886}
   profile: {fileID: 11400000, guid: 9afb1c212dd954caebce7a1c3ea25f7e, type: 2}
 --- !u!114 &6169226421828019461
@@ -11402,7 +11279,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d2200bccffa940de92fcf74913474a4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ContactReporter
+  m_EditorClassIdentifier: ALS.HDT.Runtime::ALS.HDT.ContactReporter
 --- !u!136 &5195266614545219083
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11426,6 +11303,134 @@ CapsuleCollider:
   m_Height: 0.050249998
   m_Direction: 1
   m_Center: {x: 0, y: -0.018, z: 0}
+--- !u!1 &9001400696383841663
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1153709945350149725}
+  m_Layer: 0
+  m_Name: L_Ring_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1153709945350149725
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9001400696383841663}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.041, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3070474035232568429}
+  m_Father: {fileID: 7080725782299604871}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9009805627978802031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3063464168133812487}
+  m_Layer: 0
+  m_Name: R_Index_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3063464168133812487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9009805627978802031}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.039, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8303686465257242977}
+  m_Father: {fileID: 7780500976916224571}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9051360699192658204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7780500976916224571}
+  m_Layer: 0
+  m_Name: R_Index_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7780500976916224571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9051360699192658204}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.027, y: -0.108, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3063464168133812487}
+  m_Father: {fileID: 7552906799938303299}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9167834317071139457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 572925851816000484}
+  m_Layer: 0
+  m_Name: L_Forearm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &572925851816000484
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9167834317071139457}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5823248053770779365}
+  m_Father: {fileID: 4506330912265457547}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9222782851531243752
 GameObject:
   m_ObjectHideFlags: 0

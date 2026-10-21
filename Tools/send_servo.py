@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at https://mozilla.org/MPL/2.0/.
+# SPDX-License-Identifier: MPL-2.0
+# Copyright (c) 2026 ALS HDT Prototype Contributors.
 """Send only virtual-avatar targets over localhost TCP; no physical servo output."""
 import argparse
 import json
-import socket
-
-
-def request(command):
-    with socket.create_connection(("127.0.0.1", 8765), timeout=6) as connection:
-        connection.sendall((json.dumps(command, allow_nan=False) + "\n").encode())
-        with connection.makefile("rb") as stream:
-            return json.loads(stream.readline(8193))
+if __package__:
+    from .hdt_client import request
+else:
+    from hdt_client import request
 
 
 if __name__ == "__main__":

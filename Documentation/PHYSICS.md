@@ -87,4 +87,4 @@ upperArm.AddTorque(-axis * torque)
 
 默认场景已启用 `ServoAvatarBridge.enforceSevenArmSixHand`：肩 XYZ、肘 X、前臂 Y、腕 XZ 共 7 个可指令轴。腕 Y 直接设为 ConfigurableJoint Locked，原配置中的 wrist.limitY 在此模式下不生效。每根四指的一路 curl 联动三个关节，拇指 curl + spread 两路，共 6 路；联动比例由 ServoRigLeft/Right 配置保存。物理电机数量仍是 39，不等于独立硬件指令通道数。此处模拟目标联动，不包含照片中真实机械连杆的闭环约束。
 
-显式 Reset Physics 会清空插值历史、写入复位姿态并清零速度；手动 Editor 模拟关闭 Rigidbody 插值，防止没有渲染插值周期时出现旧姿态同步。正常 FixedUpdate 使用插值，手势/servo 输入不使用复位路径。详见 HARDWARE_MAPPING.md。
+显式 Reset Physics 先把整条动态链临时冻结，统一清空插值历史、写入初始姿态与速度，再恢复原动态段并重设邻接碰撞规则，避免逐段传送后沿用不一致的约束状态。此操作仅用于诊断复位，同一调用结束后双臂与指节全部恢复动态；普通手势和 servo 输入从不使用冻结/传送路径。手动 Editor 模拟关闭插值，正常 FixedUpdate 使用插值。详见 HARDWARE_MAPPING.md。

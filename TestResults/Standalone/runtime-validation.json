@@ -8,7 +8,7 @@
         {
             "name": "Idle physical tracking",
             "passed": true,
-            "detail": "Major joint mean error 3.33 degrees."
+            "detail": "Major joint mean error 2.47 degrees."
         },
         {
             "name": "Realistic human skin",
@@ -58,12 +58,12 @@
         {
             "name": "13-channel independent finger physics",
             "passed": true,
-            "detail": "Right index -71.4°; right middle -0.3°; left index -5.7°. One input per finger, multiple simulated phalanges."
+            "detail": "Right index -70.8°; right middle -0.3°; left index -4.1°. One input per finger, multiple simulated phalanges."
         },
         {
             "name": "UI synthetic servo slider",
             "passed": true,
-            "detail": "H2 Slider ChangeEvent drives the real middle-finger joints to -69.3°. No native mouse claim."
+            "detail": "H2 Slider ChangeEvent drives the real middle-finger joints to -70.7°. No native mouse claim."
         },
         {
             "name": "Servo release to idle",
@@ -73,7 +73,7 @@
         {
             "name": "Handshake physical pose",
             "passed": true,
-            "detail": "Wrist (0.228,1.218,0.443) m; major mean error 3.75 degrees."
+            "detail": "Wrist (0.228,1.222,0.445) m; major mean error 2.84 degrees."
         },
         {
             "name": "Handshake physical skin binding",
@@ -88,7 +88,7 @@
         {
             "name": "Wave physical pose",
             "passed": true,
-            "detail": "Wrist (0.380,1.652,0.007) m; major mean error 3.03 degrees."
+            "detail": "Wrist (0.384,1.653,0.007) m; major mean error 4.08 degrees."
         },
         {
             "name": "Wave physical skin binding",
@@ -103,7 +103,7 @@
         {
             "name": "DoubleThumbsUp physical pose",
             "passed": true,
-            "detail": "Wrist (0.253,1.238,0.302) m; major mean error 5.24 degrees."
+            "detail": "Wrist (0.253,1.238,0.302) m; major mean error 3.93 degrees."
         },
         {
             "name": "DoubleThumbsUp physical skin binding",
@@ -118,12 +118,12 @@
         {
             "name": "Obstacle blocks driven hand",
             "passed": true,
-            "detail": "Free z=0.451, blocked z=0.330 m."
+            "detail": "Free z=0.450, blocked z=0.334 m."
         },
         {
             "name": "Live external contact callbacks",
             "passed": true,
-            "detail": "External contact entries: 4."
+            "detail": "External contact entries: 5."
         },
         {
             "name": "Recovery after obstacle removal",
@@ -143,12 +143,12 @@
         {
             "name": "Driven hand moves dynamic object",
             "passed": true,
-            "detail": "350 g block displacement 0.2679 m; new external contacts 7."
+            "detail": "350 g block displacement 0.2875 m; new external contacts 6."
         },
         {
             "name": "Finite bounded simulation",
             "passed": true,
-            "detail": "Maximum anchor error 0.0238 m; speed 5.55 m/s; 3260 physics steps."
+            "detail": "Maximum anchor error 0.0238 m; speed 5.55 m/s; 3266 physics steps."
         }
     ]
 }

@@ -46,12 +46,12 @@
         {
             "name": "Idle tracking",
             "passed": true,
-            "detail": "Mean major-joint rotation error 3.33 degrees."
+            "detail": "Mean major-joint rotation error 2.47 degrees."
         },
         {
             "name": "Independent single-servo finger synergy",
             "passed": true,
-            "detail": "One H1 curls multiple physical index joints: proximal -71.4°, middle joint -83.1°; separate middle finger -0.3°."
+            "detail": "One H1 curls multiple physical index joints: proximal -70.8°, middle joint -82.3°; separate middle finger -0.3°."
         },
         {
             "name": "Atomic servo packet rejection",
@@ -66,57 +66,57 @@
         {
             "name": "Handshake finite and returns idle",
             "passed": true,
-            "detail": "Peak wrist y=1.274m z=0.474m; hold mean error=3.74 degrees."
+            "detail": "Peak wrist y=1.274m z=0.474m; hold mean error=2.70 degrees."
         },
         {
             "name": "Handshake extension",
             "passed": true,
-            "detail": "Forward travel 0.366m."
+            "detail": "Forward travel 0.364m."
         },
         {
             "name": "Wave finite and returns idle",
             "passed": true,
-            "detail": "Peak wrist y=1.653m z=0.216m; hold mean error=3.15 degrees."
+            "detail": "Peak wrist y=1.655m z=0.216m; hold mean error=4.15 degrees."
         },
         {
             "name": "Wave arm elevation",
             "passed": true,
-            "detail": "Vertical wrist travel 0.699m."
+            "detail": "Vertical wrist travel 0.701m."
         },
         {
             "name": "DoubleThumbsUp finite and returns idle",
             "passed": true,
-            "detail": "Peak wrist y=1.238m z=0.304m; hold mean error=5.22 degrees."
+            "detail": "Peak wrist y=1.238m z=0.305m; hold mean error=3.95 degrees."
         },
         {
             "name": "Finger fist actuation",
             "passed": true,
-            "detail": "Right index proximal flexion -73.9 degrees."
+            "detail": "Right index proximal flexion -71.8 degrees."
         },
         {
             "name": "Thumb extension orientation",
             "passed": true,
-            "detail": "Right thumb direction dot world up 0.893."
+            "detail": "Right thumb direction dot world up 0.654."
         },
         {
             "name": "Gravity with disabled motors",
             "passed": true,
-            "detail": "Hand dropped 0.281m when drive torque was removed."
+            "detail": "Hand dropped 0.278m when drive torque was removed."
         },
         {
             "name": "Solid obstacle changes motion",
             "passed": true,
-            "detail": "Free wrist z=0.450; blocked=0.330; hold error=8.41 degrees."
+            "detail": "Free wrist z=0.451; blocked=0.334; hold error=7.31 degrees."
         },
         {
             "name": "Recovery after obstacle removal",
             "passed": true,
-            "detail": "Recovered wrist forward by 0.146m."
+            "detail": "Recovered wrist forward by 0.142m."
         },
         {
             "name": "External impulse response",
             "passed": true,
-            "detail": "Wrist displacement after impulse 0.0062m."
+            "detail": "Wrist displacement after impulse 0.0063m."
         },
         {
             "name": "Movable object gravity and support",
@@ -126,12 +126,12 @@
         {
             "name": "Constraint stability",
             "passed": true,
-            "detail": "Max anchor separation 0.0004m (R_Thumb_0); max linear speed 3.63m/s."
+            "detail": "Max anchor separation 0.0004m (R_Thumb_0); max linear speed 3.83m/s."
         },
         {
             "name": "Elbow anatomical twist limits",
             "passed": true,
-            "detail": "Maximum excursion beyond configured flexion/extension range 0.00 degrees (numerical tolerance 3 degrees)."
+            "detail": "Maximum excursion beyond configured flexion/extension range 1.42 degrees (numerical tolerance 3 degrees)."
         }
     ]
 }

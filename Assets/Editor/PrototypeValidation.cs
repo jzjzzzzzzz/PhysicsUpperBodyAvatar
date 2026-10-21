@@ -1,3 +1,8 @@
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at https://mozilla.org/MPL/2.0/.
+// SPDX-License-Identifier: MPL-2.0
+// Copyright (c) 2026 ALS HDT Prototype Contributors.
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -26,8 +31,8 @@ namespace ALS.HDT.Editor
             Directory.CreateDirectory("TestResults");
             maximumAnchor = maximumSpeed = elbowLimitViolation = 0;
             EditorSceneManager.OpenScene(PrototypeBuilder.ScenePath);
-            avatar = UnityEngine.Object.FindFirstObjectByType<AvatarController>();
-            lab = UnityEngine.Object.FindFirstObjectByType<InteractionLab>();
+            avatar = UnityEngine.Object.FindAnyObjectByType<AvatarController>();
+            lab = UnityEngine.Object.FindAnyObjectByType<InteractionLab>();
             report = new Report { unityVersion = Application.unityVersion, mode = "Unity Editor / PhysX manual simulation; no rendering or play-mode collision callbacks" };
             var previous = UnityEngine.Physics.simulationMode;
             try {

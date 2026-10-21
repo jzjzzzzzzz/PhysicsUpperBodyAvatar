@@ -1,3 +1,8 @@
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at https://mozilla.org/MPL/2.0/.
+// SPDX-License-Identifier: MPL-2.0
+// Copyright (c) 2026 ALS HDT Prototype Contributors.
 using System.Linq;
 using UnityEngine;
 
@@ -114,22 +119,35 @@ namespace ALS.HDT
         {
             // Explicit diagnostic RESET is the only deliberate pose reset. It is never
             // called to perform gestures or to overcome contacts.
+            // Freeze the complete chain before teleporting any individual link.
+            // Re-entering dynamics rebuilds the constraint state instead of carrying
+            // impulses from the previous pose into the reset configuration.
+            var dynamicBodies = bones.Where(b => !b.body.isKinematic).ToArray();
+            foreach (var bone in bones) bone.body.interpolation = RigidbodyInterpolation.None;
+            foreach (var bone in dynamicBodies) {
+                bone.body.linearVelocity = Vector3.zero;
+                bone.body.angularVelocity = Vector3.zero;
+                bone.body.isKinematic = true;
+            }
             foreach (var bone in bones) {
-                // Flush interpolation history during this explicit diagnostic
-                // teleport; stale render poses must not be synced back to PhysX.
-                bone.body.interpolation = RigidbodyInterpolation.None;
-                if (!bone.body.isKinematic) { bone.body.linearVelocity = Vector3.zero; bone.body.angularVelocity = Vector3.zero; }
                 bone.transform.SetPositionAndRotation(bone.resetPosition, bone.resetRotation);
-                bone.body.position = bone.resetPosition; bone.body.rotation = bone.resetRotation;
+                bone.body.position = bone.resetPosition;
+                bone.body.rotation = bone.resetRotation;
             }
             if (servoBridge) servoBridge.Clear();
             gestures.Initialize(); motorStrength = 1; ApplyTargets();
             UnityEngine.Physics.SyncTransforms();
-            foreach (var bone in bones) {
-                bone.body.interpolation = ExternalStepping ? RigidbodyInterpolation.None : RigidbodyInterpolation.Interpolate;
-                if (!bone.body.isKinematic) bone.body.WakeUp();
+            foreach (var bone in dynamicBodies) {
+                bone.body.isKinematic = false;
+                bone.body.linearVelocity = Vector3.zero;
+                bone.body.angularVelocity = Vector3.zero;
+                bone.body.WakeUp();
             }
+            ConfigureSelfCollisions();
+            foreach (var bone in bones)
+                bone.body.interpolation = ExternalStepping ? RigidbodyInterpolation.None : RigidbodyInterpolation.Interpolate;
         }
+
         void OnDestroy() { if (Application.isPlaying) Time.timeScale = 1; }
     }
 }
