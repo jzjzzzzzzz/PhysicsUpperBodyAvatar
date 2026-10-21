@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22048878275bb40fbadc5d1642319df5, type: 3}
+  m_Name: Gestures
+  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.GestureLibrary
+  idle:
+    left:
+      shoulder: {x: -7, y: 0, z: -4}
+      wrist: {x: 0, y: 0, z: 0}
+      elbow: -12
+      pronation: 85
+      fingerCurl: 0.08
+      thumbCurl: 0.05
+      thumbSpread: 0
+    right:
+      shoulder: {x: -7, y: 0, z: 4}
+      wrist: {x: 0, y: 0, z: 0}
+      elbow: -12
+      pronation: -85
+      fingerCurl: 0.08
+      thumbCurl: 0.05
+      thumbSpread: 0
+  returnDuration: 0.65
+  gestures:
+  - type: 1
+    duration: 4.2
+    blendFraction: 0.23
+    cycles: 3
+    amplitude: 5
+    pose:
+      left:
+        shoulder: {x: -7, y: 0, z: -4}
+        wrist: {x: 0, y: 0, z: 0}
+        elbow: -12
+        pronation: 85
+        fingerCurl: 0.08
+        thumbCurl: 0.05
+        thumbSpread: 0
+      right:
+        shoulder: {x: -45, y: 0, z: 2}
+        wrist: {x: 0, y: -10, z: 0}
+        elbow: -45
+        pronation: -78
+        fingerCurl: 0.03
+        thumbCurl: 0
+        thumbSpread: 0
+  - type: 2
+    duration: 4.5
+    blendFraction: 0.23
+    cycles: 3
+    amplitude: 16
+    pose:
+      left:
+        shoulder: {x: -7, y: 0, z: -4}
+        wrist: {x: 0, y: 0, z: 0}
+        elbow: -12
+        pronation: 85
+        fingerCurl: 0.08
+        thumbCurl: 0.05
+        thumbSpread: 0
+      right:
+        shoulder: {x: -5, y: 88, z: 72}
+        wrist: {x: 0, y: -8, z: 0}
+        elbow: -132
+        pronation: -80
+        fingerCurl: 0
+        thumbCurl: 0
+        thumbSpread: 0
+  - type: 3
+    duration: 4
+    blendFraction: 0.23
+    cycles: 3
+    amplitude: 14
+    pose:
+      left:
+        shoulder: {x: -10, y: 0, z: -8}
+        wrist: {x: 0, y: 0, z: 0}
+        elbow: -95
+        pronation: 85
+        fingerCurl: 0.96
+        thumbCurl: 0
+        thumbSpread: 34
+      right:
+        shoulder: {x: -10, y: 0, z: 8}
+        wrist: {x: 0, y: 0, z: 0}
+        elbow: -95
+        pronation: -85
+        fingerCurl: 0.96
+        thumbCurl: 0
+        thumbSpread: 34

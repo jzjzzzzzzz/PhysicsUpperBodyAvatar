@@ -1,0 +1,154 @@
+{
+    "unityVersion": "6000.5.7f1",
+    "platform": "OSXPlayer",
+    "graphicsDevice": "Apple M5 Pro",
+    "mode": "Standalone / automatic FixedUpdate / live collision callbacks / rendered screenshots",
+    "allPassed": true,
+    "tests": [
+        {
+            "name": "Idle physical tracking",
+            "passed": true,
+            "detail": "Major joint mean error 3.33 degrees."
+        },
+        {
+            "name": "Realistic human skin",
+            "passed": true,
+            "detail": "Textured Rocketbox character; visible mesh has physical bones and no Animator."
+        },
+        {
+            "name": "UI navigation: Handshake",
+            "passed": true,
+            "detail": "Synthetic NavigationSubmitEvent dispatched to the actual Button."
+        },
+        {
+            "name": "UI navigation: Wave",
+            "passed": true,
+            "detail": "Synthetic NavigationSubmitEvent dispatched to the actual Button."
+        },
+        {
+            "name": "UI navigation: Double Thumbs-Up",
+            "passed": true,
+            "detail": "Synthetic NavigationSubmitEvent dispatched to the actual Button."
+        },
+        {
+            "name": "UI navigation: Pause",
+            "passed": true,
+            "detail": "Physics steps stop; unscaled UI remains responsive."
+        },
+        {
+            "name": "UI navigation: Resume",
+            "passed": true,
+            "detail": "FixedUpdate resumes."
+        },
+        {
+            "name": "UI navigation: contact gate",
+            "passed": true,
+            "detail": "Actual interaction button toggles the kinematic obstacle."
+        },
+        {
+            "name": "UI navigation: diagnostics",
+            "passed": true,
+            "detail": "Physics diagnostics panel opens."
+        },
+        {
+            "name": "UI navigation: reset and idle",
+            "passed": true,
+            "detail": "Reset button returns state machine to idle."
+        },
+        {
+            "name": "13-channel independent finger physics",
+            "passed": true,
+            "detail": "Right index -71.4°; right middle -0.3°; left index -5.7°. One input per finger, multiple simulated phalanges."
+        },
+        {
+            "name": "UI synthetic servo slider",
+            "passed": true,
+            "detail": "H2 Slider ChangeEvent drives the real middle-finger joints to -69.3°. No native mouse claim."
+        },
+        {
+            "name": "Servo release to idle",
+            "passed": true,
+            "detail": "UI releases manual targets and smoothly returns to idle."
+        },
+        {
+            "name": "Handshake physical pose",
+            "passed": true,
+            "detail": "Wrist (0.228,1.218,0.443) m; major mean error 3.75 degrees."
+        },
+        {
+            "name": "Handshake physical skin binding",
+            "passed": true,
+            "detail": "CPU-skinned vertices vs physical bone matrices: max difference 0.000000 m."
+        },
+        {
+            "name": "Handshake returns idle",
+            "passed": true,
+            "detail": "Idle"
+        },
+        {
+            "name": "Wave physical pose",
+            "passed": true,
+            "detail": "Wrist (0.380,1.652,0.007) m; major mean error 3.03 degrees."
+        },
+        {
+            "name": "Wave physical skin binding",
+            "passed": true,
+            "detail": "CPU-skinned vertices vs physical bone matrices: max difference 0.000000 m."
+        },
+        {
+            "name": "Wave returns idle",
+            "passed": true,
+            "detail": "Idle"
+        },
+        {
+            "name": "DoubleThumbsUp physical pose",
+            "passed": true,
+            "detail": "Wrist (0.253,1.238,0.302) m; major mean error 5.24 degrees."
+        },
+        {
+            "name": "DoubleThumbsUp physical skin binding",
+            "passed": true,
+            "detail": "CPU-skinned vertices vs physical bone matrices: max difference 0.000000 m."
+        },
+        {
+            "name": "DoubleThumbsUp returns idle",
+            "passed": true,
+            "detail": "Idle"
+        },
+        {
+            "name": "Obstacle blocks driven hand",
+            "passed": true,
+            "detail": "Free z=0.451, blocked z=0.330 m."
+        },
+        {
+            "name": "Live external contact callbacks",
+            "passed": true,
+            "detail": "External contact entries: 4."
+        },
+        {
+            "name": "Recovery after obstacle removal",
+            "passed": true,
+            "detail": "Recovered z=0.476 m."
+        },
+        {
+            "name": "Impulse affects physical skeleton",
+            "passed": true,
+            "detail": "Applied finite 0.4 N s lateral hand impulse."
+        },
+        {
+            "name": "Movable object supported by contact",
+            "passed": true,
+            "detail": "Block centre y=1.040 m."
+        },
+        {
+            "name": "Driven hand moves dynamic object",
+            "passed": true,
+            "detail": "350 g block displacement 0.2679 m; new external contacts 7."
+        },
+        {
+            "name": "Finite bounded simulation",
+            "passed": true,
+            "detail": "Maximum anchor error 0.0238 m; speed 5.55 m/s; 3260 physics steps."
+        }
+    ]
+}

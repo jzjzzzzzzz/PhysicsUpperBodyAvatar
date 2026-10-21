@@ -1,0 +1,28 @@
+{
+  "repository": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "commit": "0943055db6ec570bcef9f2c8b41c9e5467c808f9",
+  "asset": "Assets/Avatars/Adults/Male_Adult_04",
+  "license": "MIT",
+  "files": [
+    "LICENSE.md",
+    "Assets/Avatars/Adults/Male_Adult_04/Export/Male_Adult_04.fbx",
+    "Assets/Avatars/Adults/Male_Adult_04/Textures/m006_body_color.tga",
+    "Assets/Avatars/Adults/Male_Adult_04/Textures/m006_body_normal.tga",
+    "Assets/Avatars/Adults/Male_Adult_04/Textures/m006_body_specular.tga",
+    "Assets/Avatars/Adults/Male_Adult_04/Textures/m006_head_color.tga",
+    "Assets/Avatars/Adults/Male_Adult_04/Textures/m006_head_normal.tga",
+    "Assets/Avatars/Adults/Male_Adult_04/Textures/m006_head_specular.tga",
+    "Assets/Avatars/Adults/Male_Adult_04/Textures/m006_opacity_color.tga"
+  ],
+  "sha256": {
+    "LICENSE.md": "17474e386e0b9e1a700cc3d06b2b0882a2c376d9c6b49c7f8274409b8f8d2352",
+    "Textures/m006_head_normal.tga": "ca51b8fd271751dd5b58493038c0ac4496c3c51a986d69541723a680ccbcf91b",
+    "Textures/m006_body_color.tga": "8dd7a0a1de383bd295f9f6f42b4ab484b2afa4ab920521a161bd18b18c3aae0f",
+    "Textures/m006_head_specular.tga": "dd4ca495955bab36c599030b880f78e8bb6f20d4112353298cdd8800d15a50ff",
+    "Textures/m006_head_color.tga": "e889edd96192a396efec0bf0baed370fdff4a8d3b2efdc3809722eb19cd21941",
+    "Textures/m006_opacity_color.tga": "3c5656dbad4872676c9469f6da09690c0e891148394165dda11b265cb2b014c0",
+    "Textures/m006_body_normal.tga": "1d5062e2c5012bca62c2090cf064c8e2d335daafb0ab62b431e47c628ad781a7",
+    "Textures/m006_body_specular.tga": "f3b693a9e7a6090f01a6e6f199eb9d53ba0b3f236ca596074fcb915d5bcfbc1f",
+    "Export/Male_Adult_04.fbx": "fe0d026bc59e7d7ea8f4049edf77ee8040e050224b44a10fb4727b9b3d6efba0"
+  }
+}

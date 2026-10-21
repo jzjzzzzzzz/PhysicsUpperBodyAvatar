@@ -1,0 +1,153 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e29595c927a64ac4b97863d6641aa3d, type: 3}
+  m_Name: ServoRigRight
+  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.ServoRigProfile
+  schema: als-hdt-servo-rig-v1
+  calibrationNotes: 'PROVISIONAL: 7 arm + 6 hand per side. Port IDs, endpoint angles,
+    direction, handedness and linkage ratios are not measured from hardware. 0..180
+    is a virtual input example, not a verified servo travel range.'
+  hardwareCalibrated: 0
+  side: 2
+  channels:
+  - id: A1
+    label: Shoulder flex
+    function: 0
+    controllerPort: -1
+    inputMin: 0
+    inputMax: 180
+    reversed: 0
+    targetMin: -105
+    targetMax: 65
+    maxInputDegreesPerSecond: 180
+  - id: A2
+    label: Shoulder rotate
+    function: 1
+    controllerPort: -1
+    inputMin: 0
+    inputMax: 180
+    reversed: 0
+    targetMin: -100
+    targetMax: 100
+    maxInputDegreesPerSecond: 180
+  - id: A3
+    label: Shoulder raise
+    function: 2
+    controllerPort: -1
+    inputMin: 0
+    inputMax: 180
+    reversed: 0
+    targetMin: -112
+    targetMax: 112
+    maxInputDegreesPerSecond: 180
+  - id: A4
+    label: Elbow flex
+    function: 3
+    controllerPort: -1
+    inputMin: 0
+    inputMax: 180
+    reversed: 0
+    targetMin: -145
+    targetMax: 0
+    maxInputDegreesPerSecond: 180
+  - id: A5
+    label: Forearm rotate
+    function: 4
+    controllerPort: -1
+    inputMin: 0
+    inputMax: 180
+    reversed: 0
+    targetMin: -90
+    targetMax: 90
+    maxInputDegreesPerSecond: 180
+  - id: A6
+    label: Wrist flex
+    function: 5
+    controllerPort: -1
+    inputMin: 0
+    inputMax: 180
+    reversed: 0
+    targetMin: -45
+    targetMax: 45
+    maxInputDegreesPerSecond: 180
+  - id: A7
+    label: Wrist deviate
+    function: 6
+    controllerPort: -1
+    inputMin: 0
+    inputMax: 180
+    reversed: 0
+    targetMin: -28
+    targetMax: 28
+    maxInputDegreesPerSecond: 180
+  - id: H1
+    label: Index curl
+    function: 7
+    controllerPort: -1
+    inputMin: 0
+    inputMax: 180
+    reversed: 0
+    targetMin: 0
+    targetMax: 1
+    maxInputDegreesPerSecond: 180
+  - id: H2
+    label: Middle curl
+    function: 8
+    controllerPort: -1
+    inputMin: 0
+    inputMax: 180
+    reversed: 0
+    targetMin: 0
+    targetMax: 1
+    maxInputDegreesPerSecond: 180
+  - id: H3
+    label: Ring curl
+    function: 9
+    controllerPort: -1
+    inputMin: 0
+    inputMax: 180
+    reversed: 0
+    targetMin: 0
+    targetMax: 1
+    maxInputDegreesPerSecond: 180
+  - id: H4
+    label: Little curl
+    function: 10
+    controllerPort: -1
+    inputMin: 0
+    inputMax: 180
+    reversed: 0
+    targetMin: 0
+    targetMax: 1
+    maxInputDegreesPerSecond: 180
+  - id: H5
+    label: Thumb curl
+    function: 11
+    controllerPort: -1
+    inputMin: 0
+    inputMax: 180
+    reversed: 0
+    targetMin: 0
+    targetMax: 1
+    maxInputDegreesPerSecond: 180
+  - id: H6
+    label: Thumb spread
+    function: 12
+    controllerPort: -1
+    inputMin: 0
+    inputMax: 180
+    reversed: 0
+    targetMin: -35
+    targetMax: 35
+    maxInputDegreesPerSecond: 180
+  fingerFlexion: {x: 75, y: 85, z: 55}
+  thumbFlexion: {x: 45, y: 55, z: 55}

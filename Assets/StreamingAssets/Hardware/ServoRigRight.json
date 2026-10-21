@@ -1,0 +1,174 @@
+{
+    "schema": "als-hdt-servo-rig-v1",
+    "calibrationNotes": "PROVISIONAL: 7 arm + 6 hand per side. Port IDs, endpoint angles, direction, handedness and linkage ratios are not measured from hardware. 0..180 is a virtual input example, not a verified servo travel range.",
+    "hardwareCalibrated": false,
+    "side": 2,
+    "channels": [
+        {
+            "id": "A1",
+            "label": "Shoulder flex",
+            "function": 0,
+            "controllerPort": -1,
+            "inputMin": 0.0,
+            "inputMax": 180.0,
+            "reversed": false,
+            "targetMin": -105.0,
+            "targetMax": 65.0,
+            "maxInputDegreesPerSecond": 180.0
+        },
+        {
+            "id": "A2",
+            "label": "Shoulder rotate",
+            "function": 1,
+            "controllerPort": -1,
+            "inputMin": 0.0,
+            "inputMax": 180.0,
+            "reversed": false,
+            "targetMin": -100.0,
+            "targetMax": 100.0,
+            "maxInputDegreesPerSecond": 180.0
+        },
+        {
+            "id": "A3",
+            "label": "Shoulder raise",
+            "function": 2,
+            "controllerPort": -1,
+            "inputMin": 0.0,
+            "inputMax": 180.0,
+            "reversed": false,
+            "targetMin": -112.0,
+            "targetMax": 112.0,
+            "maxInputDegreesPerSecond": 180.0
+        },
+        {
+            "id": "A4",
+            "label": "Elbow flex",
+            "function": 3,
+            "controllerPort": -1,
+            "inputMin": 0.0,
+            "inputMax": 180.0,
+            "reversed": false,
+            "targetMin": -145.0,
+            "targetMax": 0.0,
+            "maxInputDegreesPerSecond": 180.0
+        },
+        {
+            "id": "A5",
+            "label": "Forearm rotate",
+            "function": 4,
+            "controllerPort": -1,
+            "inputMin": 0.0,
+            "inputMax": 180.0,
+            "reversed": false,
+            "targetMin": -90.0,
+            "targetMax": 90.0,
+            "maxInputDegreesPerSecond": 180.0
+        },
+        {
+            "id": "A6",
+            "label": "Wrist flex",
+            "function": 5,
+            "controllerPort": -1,
+            "inputMin": 0.0,
+            "inputMax": 180.0,
+            "reversed": false,
+            "targetMin": -45.0,
+            "targetMax": 45.0,
+            "maxInputDegreesPerSecond": 180.0
+        },
+        {
+            "id": "A7",
+            "label": "Wrist deviate",
+            "function": 6,
+            "controllerPort": -1,
+            "inputMin": 0.0,
+            "inputMax": 180.0,
+            "reversed": false,
+            "targetMin": -28.0,
+            "targetMax": 28.0,
+            "maxInputDegreesPerSecond": 180.0
+        },
+        {
+            "id": "H1",
+            "label": "Index curl",
+            "function": 7,
+            "controllerPort": -1,
+            "inputMin": 0.0,
+            "inputMax": 180.0,
+            "reversed": false,
+            "targetMin": 0.0,
+            "targetMax": 1.0,
+            "maxInputDegreesPerSecond": 180.0
+        },
+        {
+            "id": "H2",
+            "label": "Middle curl",
+            "function": 8,
+            "controllerPort": -1,
+            "inputMin": 0.0,
+            "inputMax": 180.0,
+            "reversed": false,
+            "targetMin": 0.0,
+            "targetMax": 1.0,
+            "maxInputDegreesPerSecond": 180.0
+        },
+        {
+            "id": "H3",
+            "label": "Ring curl",
+            "function": 9,
+            "controllerPort": -1,
+            "inputMin": 0.0,
+            "inputMax": 180.0,
+            "reversed": false,
+            "targetMin": 0.0,
+            "targetMax": 1.0,
+            "maxInputDegreesPerSecond": 180.0
+        },
+        {
+            "id": "H4",
+            "label": "Little curl",
+            "function": 10,
+            "controllerPort": -1,
+            "inputMin": 0.0,
+            "inputMax": 180.0,
+            "reversed": false,
+            "targetMin": 0.0,
+            "targetMax": 1.0,
+            "maxInputDegreesPerSecond": 180.0
+        },
+        {
+            "id": "H5",
+            "label": "Thumb curl",
+            "function": 11,
+            "controllerPort": -1,
+            "inputMin": 0.0,
+            "inputMax": 180.0,
+            "reversed": false,
+            "targetMin": 0.0,
+            "targetMax": 1.0,
+            "maxInputDegreesPerSecond": 180.0
+        },
+        {
+            "id": "H6",
+            "label": "Thumb spread",
+            "function": 12,
+            "controllerPort": -1,
+            "inputMin": 0.0,
+            "inputMax": 180.0,
+            "reversed": false,
+            "targetMin": -35.0,
+            "targetMax": 35.0,
+            "maxInputDegreesPerSecond": 180.0
+        }
+    ],
+    "fingerFlexion": {
+        "x": 75.0,
+        "y": 85.0,
+        "z": 55.0
+    },
+    "thumbFlexion": {
+        "x": 45.0,
+        "y": 55.0,
+        "z": 55.0
+    }
+}

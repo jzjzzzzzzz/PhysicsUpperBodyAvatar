@@ -1,0 +1,328 @@
+{
+  "mode": "Live standalone localhost TCP / newline-delimited JSON",
+  "allPassed": true,
+  "tests": [
+    {
+      "name": "idle",
+      "passed": true,
+      "response": {
+        "accepted": true,
+        "action": "idle",
+        "state": "Returning",
+        "error": "",
+        "side": "",
+        "mode": "",
+        "targetValues": [],
+        "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "handshake",
+      "passed": true,
+      "response": {
+        "accepted": true,
+        "action": "handshake",
+        "state": "Returning",
+        "error": "",
+        "side": "",
+        "mode": "",
+        "targetValues": [],
+        "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "wave",
+      "passed": true,
+      "response": {
+        "accepted": true,
+        "action": "wave",
+        "state": "Returning",
+        "error": "",
+        "side": "",
+        "mode": "",
+        "targetValues": [],
+        "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "double_thumbs_up",
+      "passed": true,
+      "response": {
+        "accepted": true,
+        "action": "double_thumbs_up",
+        "state": "Returning",
+        "error": "",
+        "side": "",
+        "mode": "",
+        "targetValues": [],
+        "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "unknown action",
+      "passed": true,
+      "response": {
+        "accepted": false,
+        "action": "",
+        "state": "",
+        "error": "Unknown action.",
+        "side": "",
+        "mode": "",
+        "targetValues": [],
+        "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "short duration",
+      "passed": true,
+      "response": {
+        "accepted": false,
+        "action": "",
+        "state": "",
+        "error": "duration must be 0 (default) or between 1.2 and 15 seconds.",
+        "side": "",
+        "mode": "",
+        "targetValues": [],
+        "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "negative duration",
+      "passed": true,
+      "response": {
+        "accepted": false,
+        "action": "",
+        "state": "",
+        "error": "duration must be 0 (default) or between 1.2 and 15 seconds.",
+        "side": "",
+        "mode": "",
+        "targetValues": [],
+        "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "long duration",
+      "passed": true,
+      "response": {
+        "accepted": false,
+        "action": "",
+        "state": "",
+        "error": "duration must be 0 (default) or between 1.2 and 15 seconds.",
+        "side": "",
+        "mode": "",
+        "targetValues": [],
+        "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "missing action",
+      "passed": true,
+      "response": {
+        "accepted": false,
+        "action": "",
+        "state": "",
+        "error": "Missing action.",
+        "side": "",
+        "mode": "",
+        "targetValues": [],
+        "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "malformed JSON",
+      "passed": true,
+      "response": {
+        "accepted": false,
+        "action": "",
+        "state": "",
+        "error": "JSON parse error: Invalid value.",
+        "side": "",
+        "mode": "",
+        "targetValues": [],
+        "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "13-channel state",
+      "passed": true,
+      "response": {
+        "accepted": true,
+        "action": "servo_state",
+        "state": "Returning",
+        "error": "",
+        "side": "right",
+        "mode": "GESTURES / 7 ARM + 6 HAND",
+        "targetValues": [
+          103.76470947265625,
+          90.0,
+          93.21428680419922,
+          165.10345458984375,
+          5.0,
+          90.0,
+          90.0,
+          14.399999618530273,
+          14.399999618530273,
+          14.399999618530273,
+          14.399999618530273,
+          9.0,
+          90.0
+        ],
+        "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "right servo pose",
+      "passed": true,
+      "response": {
+        "accepted": true,
+        "action": "servo_pose",
+        "state": "Idle",
+        "error": "",
+        "side": "right",
+        "mode": "SERVO INPUT / SIMULATION ONLY",
+        "targetValues": [
+          103.76470947265625,
+          90.0,
+          93.21428680419922,
+          165.10345458984375,
+          5.0,
+          90.0,
+          90.0,
+          14.399999618530273,
+          14.399999618530273,
+          14.399999618530273,
+          14.399999618530273,
+          9.0,
+          90.0
+        ],
+        "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "left servo pose",
+      "passed": true,
+      "response": {
+        "accepted": true,
+        "action": "servo_pose",
+        "state": "Idle",
+        "error": "",
+        "side": "left",
+        "mode": "SERVO INPUT / SIMULATION ONLY",
+        "targetValues": [
+          103.76470947265625,
+          90.0,
+          93.21428680419922,
+          165.10345458984375,
+          5.0,
+          90.0,
+          90.0,
+          14.399999618530273,
+          14.399999618530273,
+          14.399999618530273,
+          14.399999618530273,
+          9.0,
+          90.0
+        ],
+        "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "wrong servo channel count",
+      "passed": true,
+      "response": {
+        "accepted": false,
+        "action": "",
+        "state": "",
+        "error": "values must contain exactly 13 angles in A1..A7,H1..H6 order.",
+        "side": "",
+        "mode": "",
+        "targetValues": [],
+        "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "missing servo values",
+      "passed": true,
+      "response": {
+        "accepted": false,
+        "action": "",
+        "state": "",
+        "error": "values must contain exactly 13 angles in A1..A7,H1..H6 order.",
+        "side": "",
+        "mode": "",
+        "targetValues": [],
+        "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "invalid servo side",
+      "passed": true,
+      "response": {
+        "accepted": false,
+        "action": "",
+        "state": "",
+        "error": "side must be left or right.",
+        "side": "",
+        "mode": "",
+        "targetValues": [],
+        "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "out-of-range servo angle",
+      "passed": true,
+      "response": {
+        "accepted": false,
+        "action": "",
+        "state": "",
+        "error": "Input out of calibrated range at A1",
+        "side": "",
+        "mode": "",
+        "targetValues": [],
+        "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "non-finite servo angle",
+      "passed": true,
+      "response": {
+        "accepted": false,
+        "action": "",
+        "state": "",
+        "error": "Input out of calibrated range at H6",
+        "side": "",
+        "mode": "",
+        "targetValues": [],
+        "hardwareCalibrated": false
+      }
+    },
+    {
+      "name": "invalid packets preserve target",
+      "passed": true,
+      "response": {
+        "accepted": true,
+        "action": "servo_state",
+        "state": "Idle",
+        "error": "",
+        "side": "right",
+        "mode": "SERVO INPUT / SIMULATION ONLY",
+        "targetValues": [
+          103.76470947265625,
+          90.0,
+          93.21428680419922,
+          165.10345458984375,
+          5.0,
+          90.0,
+          90.0,
+          14.399999618530273,
+          14.399999618530273,
+          14.399999618530273,
+          14.399999618530273,
+          9.0,
+          90.0
+        ],
+        "hardwareCalibrated": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+UserSettings/
+[Bb]uilds/
+.vs/
+.idea/
+*.csproj
+*.sln
+*.slnx
+*.pidb
+*.user
+*.DS_Store
+
+# Generated delivery packages stay local; publish binaries as Releases if needed.
+/Distribution/
+__pycache__/
+*.py[cod]
+
+# Local credentials and editor/OS state.
+.env
+.env.*
+!.env.example
+*.p12
+*.pfx
+*.key
+.vscode/
+.AppleDouble/
+.LSOverride

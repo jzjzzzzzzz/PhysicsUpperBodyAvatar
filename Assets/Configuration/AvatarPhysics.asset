@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b30990a83869347388d383db7432141f, type: 3}
+  m_Name: AvatarPhysics
+  m_EditorClassIdentifier: Assembly-CSharp::ALS.HDT.AvatarPhysicsProfile
+  fixedTimeStep: 0.011111111
+  solverIterations: 40
+  solverVelocityIterations: 20
+  linearDamping: 0.05
+  angularDamping: 0.15
+  maxAngularVelocity: 9
+  contactOffset: 0.003
+  limitContactDegrees: 0
+  shoulderHalfWidth: 0.22
+  shoulderHeight: 1.5
+  upperArmLength: 0.3
+  forearmLength: 0.26
+  palmLength: 0.115
+  upperArmRadius: 0.049
+  forearmRadius: 0.037
+  upperArmMass: 1.85
+  elbowMass: 0.12
+  forearmMass: 1.05
+  handMass: 0.32
+  fingerMass: 0.008
+  headMass: 4
+  thumbBaseLateral: 0.025
+  thumbBaseDown: 0.02
+  shoulder:
+    lowX: -105
+    highX: 65
+    limitY: 100
+    limitZ: 112
+    lockY: 0
+    lockZ: 0
+    stiffness: 145
+    damping: 14
+    torqueLimit: 34
+  elbow:
+    lowX: -145
+    highX: 0
+    limitY: 60
+    limitZ: 60
+    lockY: 1
+    lockZ: 1
+    stiffness: 85
+    damping: 7
+    torqueLimit: 18
+  pronation:
+    lowX: -90
+    highX: 90
+    limitY: 60
+    limitZ: 60
+    lockY: 1
+    lockZ: 1
+    stiffness: 22
+    damping: 2
+    torqueLimit: 5
+  wrist:
+    lowX: -45
+    highX: 45
+    limitY: 15
+    limitZ: 28
+    lockY: 0
+    lockZ: 0
+    stiffness: 28
+    damping: 2.8
+    torqueLimit: 4
+  finger:
+    lowX: -100
+    highX: 5
+    limitY: 60
+    limitZ: 60
+    lockY: 1
+    lockZ: 1
+    stiffness: 0.3
+    damping: 0.025
+    torqueLimit: 0.09
+  thumb:
+    lowX: -70
+    highX: 12
+    limitY: 20
+    limitZ: 40
+    lockY: 0
+    lockZ: 0
+    stiffness: 0.35
+    damping: 0.03
+    torqueLimit: 0.12
+  neck:
+    lowX: -22
+    highX: 22
+    limitY: 35
+    limitZ: 22
+    lockY: 0
+    lockZ: 0
+    stiffness: 55
+    damping: 6
+    torqueLimit: 12
